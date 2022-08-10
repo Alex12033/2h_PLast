@@ -1,7 +1,8 @@
-require("../scss/test.scss");
+require("../scss/index.scss");
+require("../scss/header.scss");
 
 function hello() {
-    // alert("Hi All Works Fine");
+    console.log("script works fine");
 }
 
 module.exports = hello;
