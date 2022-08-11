@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;700&family=Lato:ital,wght@0,100;0,300;1,100&family=Mulish:wght@200;300;400;500;600&family=Roboto+Mono:wght@100;200&family=Roboto:wght@400;500;700&family=Water+Brush&display=swap");
+@import "./variables.scss";
 
 body {
   margin: 0;
@@ -15,5 +16,10 @@ body {
 
 :-webkit-scrollbar {
   width: 0px;
-  height: 0;
+  height: 0px;
+}
+
+.container {
+  width: $container;
+  margin: 0 auto;
 }
