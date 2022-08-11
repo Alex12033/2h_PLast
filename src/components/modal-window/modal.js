@@ -46,16 +46,16 @@ function modal() {
 
   window.addEventListener("scroll", showModalByScroll);
 
-  //CONTACT US
+  // //CONTACT US
 
-  const contactUs = document.querySelector(".contact-us");
+  // const contactUs = document.querySelector(".contact-us");
 
-  contactUs.addEventListener("click", () => {
-    modal.classList.add("show");
-    modal.classList.remove("hide");
-    document.body.style.overflow = "hidden";
-    clearInterval(modalTimeId);
-  });
+  // contactUs.addEventListener("click", () => {
+  //   modal.classList.add("show");
+  //   modal.classList.remove("hide");
+  //   document.body.style.overflow = "hidden";
+  //   clearInterval(modalTimeId);
+  // });
 }
 
-// module.exports = modal;
+module.exports = modal;
