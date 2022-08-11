@@ -1,0 +1,142 @@
+$colors:(main: #FFB342, secondary: #1C2752);
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    background: map-get($colors, main);
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    animation: slide-burger 1s forwards ease-in-out;
+
+    @keyframes slide-burger {
+        from {
+        transform: translateX(200%);
+        }
+        to {
+            transform: translateX(100%);
+        }
+    }
+  }
+  
+  .hide-back {
+      animation: hide-back-anim 1s forwards ease-out;
+
+      @keyframes hide-back-anim {
+        from {
+        transform: translateX(100%);
+        }
+        to {
+            transform: translateX(200%);
+        }
+    }
+  }
+  
+  .mobile-nav__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+//   display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+  .mobile-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .toggle-button {
+    // display: none;
+    width: 48px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 auto;
+
+    & :focus {
+        outline: none;
+      }
+
+    .toggle-button__bar {
+        width: 100%;
+        height: 3px;
+        background: map-get($colors, main);
+        display: block;
+        margin: 10px 0;
+    }
+  }
+  
+  .mobile-nav__close {
+    position: fixed;
+    height: 55px;
+    top: 15px;
+    left: 20px;
+    // right: 20px;
+    width: 30px;
+
+    svg {
+        &:hover,
+        &:active {
+            cursor: pointer;
+        }
+
+        &:hover line,
+        &:active line{
+            stroke: map-get($colors, secondary);
+        }
+    }
+
+    svg line {
+        stroke: white;
+        stroke-width: 10;
+      }
+
+  }
+  
+  .mobile-nav__items {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+    .mobile-nav__item {
+        padding: 8px;
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+    
+            &:hover,
+            &:active {
+                color: map-get($colors, secondary);
+            }
+          }
+      }
+  }
+
+.main-nav__questions-item {
+    background: map-get($colors, secondary);
+    padding: 15px;
+    margin: 20px;
+    font-size: 24px;
+    
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover,
+        &:active {
+            color: map-get($colors, main);;
+        }
+    }
+}
