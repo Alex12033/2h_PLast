@@ -1,5 +1,5 @@
 function timer() {
-  const deadLine = "2022-10-10";
+  const deadLine = "2022-09-10";
 
   function getTimeRemaning(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date());
@@ -32,6 +32,15 @@ function timer() {
       minutes = timer.querySelector("#minutes"),
       seconds = timer.querySelector("#seconds"),
       timeInterval = setInterval(updateClock, 1000);
+
+      // const reset = () => {
+      //   chrono.textContent = "00:00:00";
+      //   estArrete = true;
+      //   heures = 0;
+      //   minutes = 0;
+      //   secondes = 0;
+      //   clearTimeout(timeout);
+      // };
 
     updateClock();
 
