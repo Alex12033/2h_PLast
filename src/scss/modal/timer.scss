@@ -1,0 +1,39 @@
+.promotion__timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+.promotion__timer .title {
+  font-size: 24px;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.promotion__timer .timer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.promotion__timer .timer__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  color: #398bff;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+.promotion__timer .timer__block span {
+  color: #398bff;
+  font-size: 30px;
+  font-weight: 700;
+}
