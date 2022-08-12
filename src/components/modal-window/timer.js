@@ -1,3 +1,5 @@
+require('../../scss/modal/timer.scss');
+
 function timer() {
   const deadLine = "2022-09-10";
 
