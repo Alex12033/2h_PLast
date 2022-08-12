@@ -7,4 +7,3 @@ component();
 burgerMenu();
 timer();
 modal();
-
