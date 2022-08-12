@@ -11,6 +11,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: path.resolve(__dirname, "./src/index.js"),
+    categories: path.resolve(__dirname, "./src/categories.js"),
+    drainageSystems: path.resolve(__dirname, "./src/drainage-system.js"),
+    industrialWater:path.resolve(__dirname, "./src/main-industrial-water-cooling.js"),
+    waterPurification: path.resolve(__dirname, "./src/main-water-purification-and-treatment.js")
   },
 
   output: {
@@ -70,6 +74,54 @@ module.exports = {
       //   "login_form",
       //   "sign_up_form",
       // ],
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "assortment.html",
+      template: "./public/assortment.html",
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
+      chunks: [
+        'categories'
+      ]
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "drainage-systems.html",
+      template: "./public/drainage-systems.html",
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
+      chunks: [
+        'drainageSystems'
+      ]
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "industrial-water-cooling.html",
+      template: "./public/industrial-water-cooling.html",
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
+      chunks: [
+        'industrialWater'
+      ]
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "water-purification-and-treatment.html",
+      template: "./public/water-purification-and-treatment.html",
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
+      chunks: [
+        'waterPurification'
+      ]
     }),
   ],
 };
