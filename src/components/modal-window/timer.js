@@ -35,15 +35,6 @@ function timer() {
       seconds = timer.querySelector("#seconds"),
       timeInterval = setInterval(updateClock, 1000);
 
-      // const reset = () => {
-      //   chrono.textContent = "00:00:00";
-      //   estArrete = true;
-      //   heures = 0;
-      //   minutes = 0;
-      //   secondes = 0;
-      //   clearTimeout(timeout);
-      // };
-
     updateClock();
 
     function updateClock() {
