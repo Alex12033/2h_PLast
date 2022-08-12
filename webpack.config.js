@@ -48,6 +48,15 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
+
+      {
+        test: /\.(svg|png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        type: 'src/assets',
+        options: {
+          outputPath: 'src/assets',
+        },
+      },
     ],
   },
 
