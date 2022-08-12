@@ -10,6 +10,37 @@
 
 <body>
     <header>
+        <div class="mobile-nav__backdrop">
+            <nav class="mobile-nav">
+              <div class="mobile-nav__wrapper">
+                <div class="mobile-nav__close">
+                  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" x2="100" y1="0" y2="100" />
+                    <line x1="0" x2="100" y1="100" y2="0" />
+                  </svg>
+                </div>
+                <ul class="mobile-nav__items">
+                  <li class="mobile-nav__item">
+                    <a href="./pages/how-it-works/index.html">Головна</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a href="./pages/pricing/index.html">Про нас</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a href="./pages/about-us/index.html">Категорії товару</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a href="./pages/FAQ/index.html">Наші контакти</a>
+                  </li>
+                </ul>
+                <div class="mobile-nav__questions">
+                  <div class="main-nav__questions-item">
+                    <a href="#">Виникли запитання?</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
         <div class="hours-background">
             <div class="hours-social container">
                 <span class="hours">Час роботи: з 9.30 до 18.00</span>
@@ -52,6 +83,12 @@
             <button class="question-btn">Have Any Question ?</button>
         </div>
         <div class="header-body">
+                    <!-- BURGER-MENU-BTN -->
+    <button class="toggle-button">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
             <div class="container">
                 <div class="tagline">
                     <img src="../src/assets/gear.svg" alt="gear">
@@ -94,29 +131,6 @@
                     <input required placeholder="+38 (063) 111 22 33" name="phone-modal" type="phone"
                         class="modal__input--phones">
                     <button class="modal__btn">Подзвонить менi</button>
-                    <!-- <button id="button" class="ready" onclick="clickButton();">
-
-                        <div class="message submitMessage">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12.2">
-                                <polyline stroke="currentColor" points="2,7.1 6.5,11.1 11,7.1 " />
-                                <line stroke="currentColor" x1="6.5" y1="1.2" x2="6.5" y2="10.3" />
-                            </svg> <span class="button-text">Submit</span>
-                        </div>
-
-                        <div class="message loadingMessage">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
-                                <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
-                                <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
-                                <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
-                            </svg>
-                        </div>
-
-                        <div class="message successMessage">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
-                                <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
-                            </svg> <span class="button-text">Success</span>
-                        </div>
-                    </button> -->
                 </form>
                 <div class="promotion__timer">
                     <div class="title">ПОСПІШАЙ! Поки земля не використала тебе, використай ти її:</div>
