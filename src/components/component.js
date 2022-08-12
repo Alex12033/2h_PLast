@@ -1,3 +1,6 @@
+require("../scss/test.scss");
+require("../scss/modal/modal.scss");
+require("../scss/modal/timer.scss");
 require("../scss/index.scss");
 require("../scss/header.scss");
 
