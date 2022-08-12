@@ -1,3 +1,5 @@
+require('../../scss/modal/modal.scss');
+
 function modal() {
   // Modal
   const modalTrigger = document.querySelectorAll("[data-modal]"),
