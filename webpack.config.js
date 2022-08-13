@@ -21,6 +21,7 @@ module.exports = {
       __dirname,
       "./src/main-water-purification-and-treatment.js"
     ),
+    productlList: path.resolve(__dirname, "./src/product-list.js"),
   },
 
   output: {
@@ -75,17 +76,22 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./public/index.html",
+
       excludeChunks: [
         "categories",
         "drainageSystems",
         "industrialWater",
         "waterPurification",
       ],
+
+
+      chunks: ["main"],
     }),
 
     new HtmlWebpackPlugin({
       filename: "assortment.html",
       template: "./public/assortment.html",
+
       // excludeChunks: [
       //   "login_form",
       //   "sign_up_form",
@@ -96,20 +102,24 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "drainage-systems.html",
       template: "./public/drainage-systems.html",
+
       // excludeChunks: [
       //   "login_form",
       //   "sign_up_form",
       // ],
+
       chunks: ["drainageSystems"],
     }),
 
     new HtmlWebpackPlugin({
       filename: "industrial-water-cooling.html",
       template: "./public/industrial-water-cooling.html",
+
       // excludeChunks: [
       //   "login_form",
       //   "sign_up_form",
       // ],
+
       chunks: ["industrialWater"],
     }),
 
