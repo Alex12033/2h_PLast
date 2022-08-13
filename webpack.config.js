@@ -77,6 +77,14 @@ module.exports = {
       filename: "index.html",
       template: "./public/index.html",
 
+      excludeChunks: [
+        "categories",
+        "drainageSystems",
+        "industrialWater",
+        "waterPurification",
+      ],
+
+
       chunks: ["main"],
     }),
 
@@ -84,6 +92,10 @@ module.exports = {
       filename: "assortment.html",
       template: "./public/assortment.html",
 
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
       chunks: ["categories"],
     }),
 
@@ -91,12 +103,22 @@ module.exports = {
       filename: "drainage-systems.html",
       template: "./public/drainage-systems.html",
 
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
+
       chunks: ["drainageSystems"],
     }),
 
     new HtmlWebpackPlugin({
       filename: "industrial-water-cooling.html",
       template: "./public/industrial-water-cooling.html",
+
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
 
       chunks: ["industrialWater"],
     }),
