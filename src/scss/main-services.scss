@@ -1,0 +1,170 @@
+.main-services {
+  position: relative;
+  width: 100%;
+  background: #ffb342;
+
+  .main-services__content {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .tagline-offer {
+      margin-top: 140px;
+      background: rgba(#ffffff, 0.9);
+      display: flex;
+      align-items: center;
+      width: 200px;
+      justify-content: center;
+
+      img {
+        margin-right: 5px;
+      }
+
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1c2752;
+      }
+    }
+
+    .main-services__title {
+      margin-top: 20px;
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 58px;
+      color: #1c2752;
+    }
+
+    .main-services__subscription {
+      margin-top: 12px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #1c2752;
+    }
+
+    .extractor-tabs {
+      background: rgba(#ffffff, 0.9);
+    } //this class needed for js for extract changed category
+
+    .tabs-variants {
+      margin-top: 38px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 50%;
+      margin-bottom: 400px;
+
+      .comercial, .residential, .industrial {
+        display: flex;
+        align-items: center;
+        padding: 10px 35px;
+        color: #222222;
+        border: 1px solid #1c2752;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+
+        img {
+          margin-right: 15px;
+        }
+
+        &:hover {
+            background: rgba(#ffffff, 0.9);
+            transform: translateY(-10px);
+            box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);   
+        }
+
+        &:active {
+            transform: translateY(10px);
+        }
+      }
+    }
+  }
+
+  .tab {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    top: 25%;
+    background-color: #ffffff;
+    padding: 60px 60px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    img {
+      max-width: 100%;
+    }
+
+    .left-side {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 50%;
+
+      .our-offer {
+        background: #e7e3e3;
+        padding: 0px 5px;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 15px;
+        }
+      }
+
+      .tab-title {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 58px;
+        color: #1c2752;
+        margin-top: 22px;
+      }
+
+      .tab-text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #7e7e7e;
+        margin-top: 12px;
+      }
+
+      .tab-button {
+        color: #1c2752;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        cursor: pointer;
+        padding: 20px 68px;
+        background: #ffb342;
+        margin-top: 30px;
+        border: none;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            background: #1c2752;
+            color: #ffb342;
+        }
+      }
+    }
+  }
+}
