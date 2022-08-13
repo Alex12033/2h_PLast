@@ -13,8 +13,14 @@ module.exports = {
     main: path.resolve(__dirname, "./src/index.js"),
     categories: path.resolve(__dirname, "./src/categories.js"),
     drainageSystems: path.resolve(__dirname, "./src/drainage-system.js"),
-    industrialWater:path.resolve(__dirname, "./src/main-industrial-water-cooling.js"),
-    waterPurification: path.resolve(__dirname, "./src/main-water-purification-and-treatment.js")
+    industrialWater: path.resolve(
+      __dirname,
+      "./src/main-industrial-water-cooling.js"
+    ),
+    waterPurification: path.resolve(
+      __dirname,
+      "./src/main-water-purification-and-treatment.js"
+    ),
   },
 
   output: {
@@ -52,7 +58,6 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
-
     ],
   },
 
@@ -70,10 +75,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./public/index.html",
-      // excludeChunks: [
-      //   "login_form",
-      //   "sign_up_form",
-      // ],
+      excludeChunks: [
+        "categories",
+        "drainageSystems",
+        "industrialWater",
+        "waterPurification",
+      ],
     }),
 
     new HtmlWebpackPlugin({
@@ -83,9 +90,7 @@ module.exports = {
       //   "login_form",
       //   "sign_up_form",
       // ],
-      chunks: [
-        'categories'
-      ]
+      chunks: ["categories"],
     }),
 
     new HtmlWebpackPlugin({
@@ -95,9 +100,7 @@ module.exports = {
       //   "login_form",
       //   "sign_up_form",
       // ],
-      chunks: [
-        'drainageSystems'
-      ]
+      chunks: ["drainageSystems"],
     }),
 
     new HtmlWebpackPlugin({
@@ -107,9 +110,7 @@ module.exports = {
       //   "login_form",
       //   "sign_up_form",
       // ],
-      chunks: [
-        'industrialWater'
-      ]
+      chunks: ["industrialWater"],
     }),
 
     new HtmlWebpackPlugin({
@@ -119,9 +120,7 @@ module.exports = {
       //   "login_form",
       //   "sign_up_form",
       // ],
-      chunks: [
-        'waterPurification'
-      ]
+      chunks: ["waterPurification"],
     }),
   ],
 };
