@@ -2,6 +2,7 @@ require("../scss/index.scss");
 require("../scss/header.scss");
 require("../scss/experience.scss");
 require("../scss/main-services.scss");
+require("../scss/our-services.scss");
 
 function tabs() {
   let tabs = document.querySelector(".tabs-variants"); //btns for change tab
