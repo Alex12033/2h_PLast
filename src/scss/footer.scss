@@ -1,14 +1,14 @@
 .main-footer {
-  background: #1C2752;
+  background: #1c2752;
 
   .main-footer__all-info {
     display: flex;
   }
 
   .main-footer__top-block {
-
+    flex-direction: row;
   }
-  
+
   .logo {
     width: 30%;
   }
