@@ -7,6 +7,36 @@
     <title>Industrial water cooling</title>
   </head>
   <body>
+    <div class="mobile-nav__backdrop">
+        <nav class="mobile-nav">
+            <div class="mobile-nav__wrapper">
+                <div class="mobile-nav__close">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" x2="100" y1="0" y2="100" />
+                        <line x1="0" x2="100" y1="100" y2="0" />
+                    </svg>
+                </div>
+                <ul class="mobile-nav__items">
+                    <li class="mobile-nav__item">
+                        <a href="./index.html">Головна</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#">Про нас</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="./assortment.html">Категорії товару</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#">Наші контакти</a>
+                    </li>
+                </ul>
+                <div class="mobile-nav__questions">
+                    <div class="main-nav__questions-item">
+                        <a href="#">Виникли запитання?</a>
+                    </div>
+                </div>
+        </nav>
+    </div>
     <div class="hours-background">
         <div class="hours-social container">
             <span class="hours">Час роботи: з 9.30 до 18.00</span>
@@ -20,7 +50,9 @@
     </div>
 
     <div class="email-logo container">
-        <img src="../src/assets/logo.png" class="logo" alt="logo">
+        <a href="./index.html">
+            <img src="../src/assets/logo.png" class="logo" alt="logo">
+        </a>
         <div class="info">
             <div class="mail">
                 <img src="../src/assets/mail.png" class="mail-logo" alt="logo">
@@ -41,13 +73,23 @@
     </div>
     <div class="navigation-bar container">
         <ul>
-            <li><a href="#">Головна</a></li>
+            <li><a href="./index.html">Головна</a></li>
             <li><a href="#">Про Нас</a></li>
             <li><a href="./assortment.html">Категорії Товару</a></li>
             <li><a href="#">Наші Контакти</a></li>
         </ul>
         <button class="question-btn">Have Any Question ?</button>
     </div>
-    <div class="assortment__all"></div>
+    <div class="assortment__all">
+        <div class="assortment__all--btn-burger">
+            <!-- BURGER-MENU-BTN -->
+            <button class="toggle-button">
+               <span class="toggle-button__bar"></span>
+               <span class="toggle-button__bar"></span>
+               <span class="toggle-button__bar"></span>
+                </button>
+               </div>
+        <h2>ПРОМИСЛОВЕ ВОДЯНЕ ОХОЛОДЖЕННЯ</h2>
+    </div>
   </body>
 </html>

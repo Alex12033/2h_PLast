@@ -1,6 +1,9 @@
 let fncProductList = require('./product-list');
+let burgerMenu = require('../burger_menu');
 require('../../scss/industrial-water-cooling.scss');
 require('../../scss/header.scss');
+require('../../scss/burger-menu.scss');
+require('../../scss/index.scss');
 
 function fncIndustrialWaterCooling() {
   class Product {
@@ -51,3 +54,4 @@ function fncIndustrialWaterCooling() {
 }
 
 module.exports = fncIndustrialWaterCooling;
+burgerMenu();
