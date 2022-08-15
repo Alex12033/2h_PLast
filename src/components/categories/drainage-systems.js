@@ -1,5 +1,6 @@
 let fncProductList = require('./product-list');
 require('../../scss/drainage-systems.scss');
+require('../../scss/header.scss');
 
 function fncDrainageSystems() {
   class Product {
@@ -9,11 +10,14 @@ function fncDrainageSystems() {
       this.descrition = descr;
     }
   }
-  
-  fncProductList(new Product(
-    'Наповнення дренажного дренажу - AquaBox WDR',
-    '../src/assets/img_categories/drainage-systems/1.jpg',
-    'Засыпка используется для аэробной очистки сточных вод'));
+
+  fncProductList(
+    new Product(
+      'Наповнення дренажного дренажу - AquaBox WDR',
+      '../src/assets/img_categories/drainage-systems/1.jpg',
+      'Засыпка используется для аэробной очистки сточных вод'
+    )
+  );
 }
 
 module.exports = fncDrainageSystems;
