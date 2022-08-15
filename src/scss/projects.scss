@@ -1,0 +1,65 @@
+.projects {
+  background: #1c2752;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .project-subtitle {
+    margin-top: 22px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    color: #ffffff;
+  }
+
+  .project-title {
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: #1c2752;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    background: #f4f4f4;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 150px 50px;
+
+    .project-gallery-card {
+      margin-top: 10px;
+      text-align: center;
+      background: #ffffff;
+      padding: 21px 21px 0px 21px;
+
+      .card-title {
+        color: #1c2752;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        margin-top: 27px;
+      }
+
+      .card-subtitle {
+        margin: 27px 0px;
+        color: #7e7e7e;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+      }
+    }
+  }
+}
