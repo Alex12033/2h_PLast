@@ -12,6 +12,32 @@
     <header>
         <div class="mobile-nav__backdrop">
             <nav class="mobile-nav">
+                <div class="mobile-nav__wrapper">
+                    <div class="mobile-nav__close">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0" x2="100" y1="0" y2="100" />
+                            <line x1="0" x2="100" y1="100" y2="0" />
+                        </svg>
+                    </div>
+                    <ul class="mobile-nav__items">
+                        <li class="mobile-nav__item">
+                            <a href="#">Головна</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#">Про нас</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="./assortment.html">Категорії товару</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#">Наші контакти</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-nav__questions">
+                        <div class="main-nav__questions-item">
+                            <a href="#">Виникли запитання?</a>
+                        </div>
+                    </div>
               <div class="mobile-nav__wrapper">
                 <div class="mobile-nav__close">
                   <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -21,16 +47,16 @@
                 </div>
                 <ul class="mobile-nav__items">
                   <li class="mobile-nav__item">
-                    <a href="./pages/how-it-works/index.html">Головна</a>
+                    <a href="#">Головна</a>
                   </li>
                   <li class="mobile-nav__item">
-                    <a href="./pages/pricing/index.html">Про нас</a>
+                    <a href="#">Про нас</a>
                   </li>
                   <li class="mobile-nav__item">
-                    <a href="./pages/about-us/index.html">Категорії товару</a>
+                    <a href="./assortment.html">Категорії товару</a>
                   </li>
                   <li class="mobile-nav__item">
-                    <a href="./pages/FAQ/index.html">Наші контакти</a>
+                    <a href="#">Наші контакти</a>
                   </li>
                 </ul>
                 <div class="mobile-nav__questions">
@@ -38,9 +64,8 @@
                     <a href="#">Виникли запитання?</a>
                   </div>
                 </div>
-              </div>
             </nav>
-          </div>
+        </div>
         <div class="hours-background">
             <div class="hours-social container">
                 <span class="hours">Час роботи: з 9.30 до 18.00</span>
@@ -75,20 +100,20 @@
         </div>
         <div class="navigation-bar container">
             <ul>
-                <li>Головна</li>
-                <li>Про Нас</li>
-                <li>Категорії Товару</li>
-                <li>Нащі Контакти</li>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про Нас</a></li>
+                <li><a href="./assortment.html">Категорії Товару</a></li>
+                <li><a href="#">Наші Контакти</a></li>
             </ul>
             <button class="question-btn">Have Any Question ?</button>
         </div>
         <div class="header-body">
-                    <!-- BURGER-MENU-BTN -->
-    <button class="toggle-button">
-        <span class="toggle-button__bar"></span>
-        <span class="toggle-button__bar"></span>
-        <span class="toggle-button__bar"></span>
-      </button>
+            <!-- BURGER-MENU-BTN -->
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
             <div class="container">
                 <div class="tagline">
                     <img src="../src/assets/gear.svg" alt="gear">
@@ -102,7 +127,39 @@
         </div>
     </header>
 
-    <section class="experience"></section>
+    <section class="experience container">
+        <img class="greetings-image" src="../src/assets/reason-image.svg" alt="reason-image">
+        <div class="description">
+            <div class="greetings">
+                <img src="../src/assets/greeting.png" alt="greeting">
+                <span>Вітаємо у нашій компанії</span>
+            </div>
+            <div class="title">
+                Ми забезпечуемо ваше майбутнє
+            </div>
+            <div class="text">
+                Bluecollar Electrical services was established in 2008. We are
+                trusted and reliable electricians who serve customers in the
+                city as well as throughout United States Of America.
+                <br><br>We have extensive experience of domestic and business electrical
+                installations and no job is too small. Our customers
+                value our professionalism, work ethic and our competitive prices.
+            </div>
+           <div class="reasons-years">
+            <div class="years-experience">
+                <span class="years">15</span>
+                <span class="years-experience__subscription">Років плідної <br>праці</span>
+            </div>
+            <div class="reasons-why-us">
+                <span>- For all your system requirements</span>
+                <span>- All work undertaken by qualified</span>
+                <span>- Experienced office staff on hand</span>
+                <span>- Full Guarantee On Workmanship</span>
+                <span>- Properties at a reasonable price.</span>
+            </div>
+           </div>
+        </div>
+    </section>
     <section class="main-services"></section>
     <section class="our-services"></section>
     <section class="reasons"></section>

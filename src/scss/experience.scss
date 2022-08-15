@@ -1,0 +1,95 @@
+.experience {
+  margin-top: 140px;
+  margin-bottom: 140px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  .greetings-image {
+    max-width: 100%;
+    margin-right: 50px;
+    display: block;
+  }
+
+  .description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 560px;
+
+    .greetings {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 45%;
+      background: rgba(rgb(201, 196, 196), 0.2);
+    }
+
+    .title {
+      color: #1c2752;
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 58px;
+    }
+
+    .text {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.36px;
+    }
+
+    .reasons-years {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .years-experience {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 30px;
+        background: rgba(rgb(201, 196, 196), 0.2);
+
+        .years {
+          font-size: 80px;
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 400;
+          color: #ffb342;
+        }
+        .years-experience__subscription {
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;
+          letter-spacing: 0.36px;
+          color: #1c2752;
+          text-align: center;
+        }
+      }
+
+      .reasons-why-us {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

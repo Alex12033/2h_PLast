@@ -26,6 +26,15 @@
       justify-content: space-between;
       width: 15%;
 
+      .facebook, .instagram, .pinterest, .instagram {
+        transition: 0.5s;
+
+        &:hover {
+          transform: rotateZ(360deg);
+        }
+      }
+      
+
       @include media-max-width(1200px) {
         width: 25%;
       }
@@ -187,15 +196,24 @@
 
     li {
       margin-right: 20px;
-      transition: 0.3s ease-in-out;
       color: #222222;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 500;
       cursor: pointer;
 
-      &:hover {
-        box-shadow: 0px 3px 0px 0px rgba(#e6e8ee, 0.8);
-        color: #ffff;
+      a {
+        outline: none;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+
+        &:visited {
+          color: #222222;
+        }
+
+        &:hover {
+          box-shadow: 0px 2px 0px 0px rgba(#e6e8ee, 0.8);
+          color: #ffff;
+        }
       }
     }
   }
