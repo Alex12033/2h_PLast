@@ -1,3 +1,9 @@
+@mixin media-max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
 .main-services {
   position: relative;
   width: 100%;
@@ -11,11 +17,10 @@
 
     .tagline-offer {
       margin-top: 140px;
+      padding: 0 10px;
       background: rgba(#ffffff, 0.9);
       display: flex;
       align-items: center;
-      width: 200px;
-      justify-content: center;
 
       img {
         margin-right: 5px;
@@ -39,6 +44,10 @@
       font-size: 45px;
       line-height: 58px;
       color: #1c2752;
+
+      @include media-max-width(600px) {
+        text-align: center;
+      }
     }
 
     .main-services__subscription {
@@ -49,6 +58,11 @@
       font-size: 18px;
       line-height: 27px;
       color: #1c2752;
+
+      @include media-max-width(900px) {
+        width: 70%;
+        text-align: center;
+      }
     }
 
     .extractor-tabs {
@@ -64,6 +78,34 @@
       width: 50%;
       margin-bottom: 400px;
 
+      @include media-max-width(1300px) {
+        width: 60%;
+      }
+
+      @include media-max-width(1100px) {
+        width: 70%;
+      }
+
+      @include media-max-width(900px) {
+        width: 80%;
+      }
+
+      @include media-max-width(800px) {
+        width: 85%;
+      }
+
+      @include media-max-width(700px) {
+        width: 90%;
+      }
+
+      @include media-max-width(500px) {
+        width: 95%;
+      }
+
+      @include media-max-width(450px) {
+        width: 100%;
+      }
+
       .comercial,
       .residential,
       .industrial {
@@ -75,8 +117,24 @@
         transition: 0.5s ease-in-out;
         cursor: pointer;
 
+        @include media-max-width(700px) {
+          padding: 10px 15px;
+        }
+
+        @include media-max-width(600px) {
+          padding: 5px 5px;
+        }
+
+        @include media-max-width(500px) {
+          flex-direction: column;
+        }
+
         img {
           margin-right: 15px;
+
+          @include media-max-width(500px) {
+            margin-right: 0;
+          }
         }
 
         &:hover {
@@ -96,15 +154,34 @@
     position: absolute;
     transform: translate(-50%, 50%);
     left: 50%;
-    top: 25%;
+    top: 180px;
     background-color: #ffffff;
     padding: 60px 60px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 
-    // display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+
+    @include media-max-width(1300px) {
+      background: url("../assets/tab-image-1.jpg");
+      background-position: center center;
+      background-size: cover;
+      img {
+        display: none;
+      }
+    }
+
+    @include media-max-width(900px) {
+      padding: 20px 40px;
+      top: 260px;
+      width: 90%;
+    }
+
+    @include media-max-width(900px) {
+      top: 300px;
+      padding: 10px 30px;
+    }
 
     img {
       max-width: 100%;
@@ -117,6 +194,14 @@
       flex-direction: column;
       width: 50%;
 
+      @include media-max-width(1300px) {
+        width: 100%;
+      }
+
+      // @include media-max-width(1150px) {
+      //   width: 100%;
+      // }
+
       .our-offer {
         background: #e7e3e3;
         padding: 0px 5px;
@@ -125,6 +210,10 @@
 
         img {
           margin-right: 15px;
+        }
+
+        @include media-max-width(1300px) {
+          display: none;
         }
       }
 
@@ -146,6 +235,14 @@
         line-height: 27px;
         color: #7e7e7e;
         margin-top: 12px;
+
+        @include media-max-width(1300px) {
+          background: rgba(#000000, 0.5);
+          padding: 5px 5px;
+          color: #ffff;
+          font-weight: 600;
+          font-size: 25px;
+        }
       }
 
       .tab-button {
@@ -165,6 +262,11 @@
         &:hover {
           background: #1c2752;
           color: #ffb342;
+        }
+
+        @include media-max-width(600px) {
+          width: 100%;
+          margin-bottom: 10px;
         }
       }
     }
@@ -187,29 +289,23 @@
 
   @keyframes tabs-animation {
     0% {
-      
       position: absolute;
       transform: translate(-50%, 50%);
       opacity: 0;
       left: 0%;
-      top: 25%;
     }
     50% {
-      
       position: absolute;
       transform: translate(-50%, 50%);
       opacity: 1;
       left: 60%;
-      top: 25%;
     }
 
     100% {
-      
       position: absolute;
       transform: translate(-50%, 50%);
       opacity: 1;
       left: 50%;
-      top: 25%;
     }
   }
 }
