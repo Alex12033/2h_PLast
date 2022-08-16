@@ -5,264 +5,169 @@
 }
 
 .experience {
-  margin-top: 140px;
-  margin-bottom: 140px;
-
+  // margin-top: 140px;
+  // margin-bottom: 140px;
   display: flex;
+  width: 80%;
+  margin: 140px auto;
   align-items: center;
-  flex-direction: row;
+  justify-content: space-between;
 
-  @include media-max-width(1380px) {
-    flex-wrap: wrap;
-    }
-
-  .description-all {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+  @include media-max-width(1000px) {
     width: 100%;
+    margin: 40px auto;
+  }
 
-    @include media-max-width(1200px) {
-      justify-content: space-around;
+
+  .left-side-experience {
+    width: 50%;
+    background-image: url("../assets/reason-image.svg");
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 65%;
+
+    @include media-max-width(1600px) {
+      width: 35%;
     }
 
-    @include media-max-width(850px) {
-      flex-direction: column;
+    @include media-max-width(1300px) {
+      width: 25%;
     }
 
-    .greetings-image {
-      max-width: 100%;
-      margin-right: 50px;
-      display: block;
-
-      @include media-max-width(1380px) {
-        max-width: 50%;
-      }
-
-      @include media-max-width(1100px) {
-        display: none;
-        }
-
-      @include media-max-width(850px) {
-        display: block;
-        max-width: 100%;
-        margin-right: 0;
-      }
-    }
-
-    .description {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
-
-      @include media-max-width(600px) {
-        text-align: center;
-      }
-
-      .description__block-top {
-        .greetings {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          width: 45%;
-          background: rgba(rgb(201, 196, 196), 0.2);
-
-          @include media-max-width(1400px) {
-            width: 60%;
-            justify-content: flex-start;
-          }      
-
-          @include media-max-width(1100px) {
-            margin: 0 auto;
-            justify-content: center;
-          }  
-
-          @include media-max-width(600px) {
-            width: 100%;
-          }
-
-          span {
-            margin-left: 10px;
-          }
-        }
-
-        .title {
-          color: #1c2752;
-          font-family: 'Mulish';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 45px;
-          line-height: 58px;
-
-          @include media-max-width(1100px) {
-            text-align: center;
-            }
-
-          @include media-max-width(600px) {
-            font-size: 32px;
-            font-weight: bold;
-            line-height: 30px;
-          }
-        }
-
-        .adaptive-block {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-        }
-
-        .greetings-image-adaptive {
-          display: none;
-          max-width: 50%;
-          margin-right: 20px;
-
-          @include media-max-width(1100px) {
-            display: block;
-            }
-
-            @include media-max-width(850px) {
-              display: none;
-              }
-        }
-
-        .text {
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 27px;
-          letter-spacing: 0.36px;
-        }
-      }
-
-      .description__block-bottom {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-
-        @include media-max-width(1370px) {
-          display: none;
-          }
-
-        .reasons-years {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 100%;
-
-          .years-experience {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px 30px;
-            background: rgba(rgb(201, 196, 196), 0.2);
-
-            .years {
-              font-size: 80px;
-              font-family: 'Mulish';
-              font-style: normal;
-              font-weight: 400;
-              color: #ffb342;
-            }
-            .years-experience__subscription {
-              font-family: 'Mulish';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 20px;
-              line-height: 26px;
-              letter-spacing: 0.36px;
-              color: #1c2752;
-              text-align: center;
-            }
-          }
-
-          .reasons-why-us {
-            display: flex;
-            flex-direction: column;
-
-            span {
-              font-family: 'Inter';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 17px;
-              margin-top: 10px;
-            }
-          }
-        }
-      }
+    @include media-max-width(1000px) {
+      display: none;
     }
   }
-  .description__block--bottom-adaptive {
-    // display: flex;
-    display: none;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 30px;
 
-    @include media-max-width(1370px) {
-      display: flex;
+  .right-side-experience {
+    width: 40%;
+
+    @include media-max-width(1600px) {
+      width: 60%;
+    }
+
+    @include media-max-width(1300px) {
+      width: 70%;
+    }
+
+    @include media-max-width(1000px) {
+      background-image: url("../assets/reason-image.svg");
+      box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+      background-position: center center;
+      background-size: cover;
+      padding: 10px 10px;
+      width: 100%;
     }
 
     @include media-max-width(600px) {
       text-align: center;
     }
 
-    .reasons-years {
+    .greetings {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      width: 250px;
+      padding: 0 10px;
+      background: rgba(152, 151, 151, 0.502);
+      margin-bottom: 20px;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .title {
+      color: #1c2752;
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 58px;
+      margin-bottom: 15px;
+
+      @include media-max-width(1000px) {
+        color: white;
+      }
+    }
+
+    .text {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.36px;
+
+      @include media-max-width(1000px) {
+        color: white;
+      }
+    }
+  }
+
+  .reasons-years {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+
+    @include media-max-width(1600px) {
+      width: 80%;
+    }
+
+    @include media-max-width(1300px) {
+      width: 90%;
+    }
+
+    @include media-max-width(600px) {
       width: 100%;
+      flex-direction: column;
+    }
 
-      @include media-max-width(600px) {
-        display: block;
-        }
+    .years-experience {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 30px;
+      background: rgba(rgb(201, 196, 196), 0.2);
 
-      .years-experience {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px 30px;
-        background: rgba(rgb(201, 196, 196), 0.2);
+      .years {
+        font-size: 80px;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        color: #ffb342;
+      }
+      .years-experience__subscription {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.36px;
+        color: #1c2752;
+        text-align: center;
 
-        .years {
-          font-size: 80px;
-          font-family: 'Mulish';
-          font-style: normal;
-          font-weight: 400;
-          color: #ffb342;
-        }
-        .years-experience__subscription {
-          font-family: 'Mulish';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 26px;
-          letter-spacing: 0.36px;
-          color: #1c2752;
-          text-align: center;
+        @include media-max-width(1000px) {
+          color: white;
         }
       }
+    }
 
-      .reasons-why-us {
-        display: flex;
-        flex-direction: column;
+    .reasons-why-us {
+      display: flex;
+      flex-direction: column;
 
-        @include media-max-width(600px) {
-          margin-left: 5px;
-          }
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        margin-top: 10px;
 
-        span {
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 17px;
-          margin-top: 10px;
+        @include media-max-width(1000px) {
+          color: white;
         }
       }
     }
