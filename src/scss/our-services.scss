@@ -1,3 +1,9 @@
+@mixin media-max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
 .our-services {
   display: flex;
   flex-direction: column;
@@ -49,6 +55,11 @@
       color: #7e7e7e;
 
       margin-top: 12px;
+
+      @include media-max-width(1200px) {
+        text-align: center;
+        width: 80%;
+      }
     }
   }
 
@@ -58,6 +69,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
+
+    @include media-max-width(1200px) {
+      justify-content: space-between;
+    }
+
     .card {
       display: flex;
       align-items: flex-start;
@@ -67,6 +83,21 @@
       padding: 35px 50px;
       margin-bottom: 20px;
       width: 30%;
+      transition: 0.5s ease-out;
+
+      &:hover {
+        transform: translateY(-15px);
+        box-shadow: 4px 4px 12px 3px rgba(#000000, 0.7)
+      }
+
+      @include media-max-width(1200px) {
+        width: 48%;
+      }
+
+      @include media-max-width(800px) {
+        width: 100%;
+        align-items: center;
+      }
 
       img {
         margin-bottom: 20px;
@@ -79,6 +110,10 @@
         font-weight: 400;
         font-size: 25px;
         margin-bottom: 25px;
+
+        @include media-max-width(500px) {
+          text-align: center;
+        }
       }
 
       .card-text {
@@ -88,6 +123,10 @@
         font-size: 18px;
         color: #d2d2d2;
         margin-bottom: 20px;
+
+        @include media-max-width(800px) {
+          text-align: center;
+        }
       }
 
       .view-more {

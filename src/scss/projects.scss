@@ -1,3 +1,9 @@
+@mixin media-max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
 .projects {
   background: #1c2752;
   display: flex;
@@ -11,6 +17,10 @@
     font-weight: 400;
     font-size: 45px;
     color: #ffffff;
+
+    @include media-max-width(500px) {
+      text-align: center;
+    }
   }
 
   .project-title {
@@ -34,14 +44,40 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
-    margin: 150px 50px;
+    margin: 100px 50px;
+
+    @include media-max-width(800px) {
+      margin: 70px 40px;
+    }
 
     .project-gallery-card {
-      margin-top: 10px;
+      width: 22%;
+      margin: 10px 10px;
       text-align: center;
       background: #ffffff;
       padding: 21px 21px 0px 21px;
+
+      @include media-max-width(1600px) {
+        img {
+          width: 100%;
+        }
+        
+        width: 30%;
+        padding: 10px 10px 0px 10px;
+      }
+
+      @include media-max-width(900px) {
+        width: 40%;
+        padding: 10px 10px 0px 10px;
+      }
+
+      @include media-max-width(800px) {
+        width: 90%;
+      }
+
+      @include media-max-width(500px) {
+        width: 100%;
+      }
 
       .card-title {
         color: #1c2752;
