@@ -30,7 +30,7 @@ function reviewsSlider() {
 
   function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("reviews");
+    let slides = document.getElementsByClassName("rewievs");
     let dots = document.getElementsByClassName("reviews__slider-item");
     if (n > slides.length) {
       slideIndex = 1;
@@ -47,7 +47,7 @@ function reviewsSlider() {
   }
 
   //                  Mobile SWIPE
-  const parag = document.querySelectorAll(".reviews");
+  const parag = document.querySelectorAll(".rewievs");
 
   parag.forEach(() => {
     addEventListener("touchstart", handleTouchStart, false);

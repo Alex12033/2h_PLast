@@ -28,19 +28,52 @@
     }
   }
 
-    .customers-says {
-      font-family: "Mulish";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 45px;
-      color: #1c2752;
-      margin-top: 22px;
+  .customers-says {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    color: #1c2752;
+    margin-top: 22px;
+  }
+
+  .contact-form-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+
+    @include media-max-width(900px) {
+      justify-content: space-between;
+      margin-top: 0px;
+
+      width: 100%;
     }
 
     .rewievs {
       margin-top: 42px;
       border: 1px solid black;
       padding: 20px 20px;
+
+      animation: reviews-animation 1.5s backwards ease-in-out;
+
+      @keyframes reviews-animation {
+        0% {
+          opacity: 0.1;
+        }
+        50% {
+          opacity: 1;
+        }
+
+      }
+
+      @include media-max-width(1300px) {
+        width: 70%;
+      }
+
+      @include media-max-width(900px) {
+        width: 100%;
+      }
 
       .people {
         display: flex;
@@ -72,7 +105,7 @@
       .text-slide {
         display: block;
         margin-top: 20px;
-        font-family: 'Inter';
+        font-family: "Inter";
         font-style: italic;
         font-weight: 700;
         font-size: 18px;
@@ -121,7 +154,7 @@
 
       .contact-subtitle {
         margin-top: 21px;
-        font-family: 'Mulish';
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
@@ -130,7 +163,7 @@
 
       .contact-text {
         margin-top: 13px;
-        font-family: 'Inter';
+        font-family: "Inter";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -156,7 +189,7 @@
 
         span {
           margin-left: 20px;
-          font-family: 'Mulish';
+          font-family: "Mulish";
           font-style: normal;
           font-weight: 400;
           font-size: 30px;
@@ -215,7 +248,7 @@
 
     .form-title {
       display: block;
-      font-family: 'Mulish';
+      font-family: "Mulish";
       font-style: normal;
       font-weight: 400;
       font-size: 45px;
@@ -258,7 +291,7 @@
         width: 100%;
         height: 200px;
         margin-top: 50px;
-        
+        resize: none;
         border: 1px solid #7e7e7e;
       }
 
