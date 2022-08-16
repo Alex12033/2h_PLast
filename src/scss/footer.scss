@@ -24,34 +24,44 @@ $colors: (
   .main-footer__top-block {
     width: 100%;
     display: flex;
-    // flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
     padding-top: 20px;
 
-    @include media-max-width(1200px) {
-      flex-direction: wrap;
-    }
+    // @include media-max-width(1200px) {
+    //   display: flex;
+    //   justify-content: space-around;
+    //   flex-direction: wrap;
+    // }
     @include media-max-width(1000px) {
-      flex-direction: wrap;
+      display: flex;
+      flex-direction: column;
     }
     @include media-max-width(725px) {
+      display: flex;
+      // justify-content: space-around;
       flex-direction: wrap;
-      justify-content: center;
+      // justify-content: center;
     }
   }
 
   .logo {
     display: flex;
     width: 15%;
+    margin: 0px 10px 0px 0px;
     @include media-max-width(1175px) {
       display: flex;
       width: 30%;
     }
     @include media-max-width(1010px) {
       display: flex;
-      width: 40%;
-      height: 80px;
+      width: 35%;
+      // height: 80px;
+    }
+    @include media-max-width(550px) {
+      width: 55%;
+      margin: 0px 0px 15px 0px;
     }
   }
 
@@ -60,7 +70,7 @@ $colors: (
     width: 100%;
     border: solid 0.5px #4b557d;
     opacity: 0.9;
-    margin: 30px 0px 20px 0px;
+    margin: 15px 0px 20px 0px;
     @include media-max-width(725px) {
       margin: 0px 0px 10px 0px;
     }
@@ -73,7 +83,11 @@ $colors: (
       display: flex;
       flex-direction: row;
       align-items: center;
-
+    }
+    @include media-max-width(550px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
   }
 
@@ -95,7 +109,7 @@ $colors: (
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-right: 30px;
+      margin: 0px 10px 0px 0px;
 
       .mail-info {
         margin: 0 10px;
@@ -124,6 +138,7 @@ $colors: (
       }
       @include media-max-width(1010px) {
         display: flex;
+        margin: 0px 0px 10px 0px;
         flex-direction: row;
       }
     }
@@ -132,7 +147,7 @@ $colors: (
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-right: 30px;
+      margin: 0px 10px 0px 0px;
 
       .phone-info {
         margin: 0px 10px;
@@ -161,6 +176,7 @@ $colors: (
       }
       @include media-max-width(1010px) {
         display: flex;
+        margin: 0px 0px 10px 0px;
         flex-direction: row;
       }
     }
@@ -169,6 +185,7 @@ $colors: (
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin: 0px 30px 0px 0px;
 
       .location-info {
         margin: 0px 10px;
