@@ -4,6 +4,9 @@ require("../scss/experience.scss");
 require("../scss/main-services.scss");
 require("../scss/our-services.scss");
 require("../scss/footer.scss");
+require("../scss/reasons.scss");
+require("../scss/projects.scss");
+require("../scss/contact-form.scss");
 
 function tabs() {
   let tabs = document.querySelector(".tabs-variants"); //btns for change tab
