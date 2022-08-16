@@ -34,6 +34,10 @@ $colors: (
     @include media-max-width(1000px) {
       flex-direction: wrap;
     }
+    @include media-max-width(725px) {
+      flex-direction: wrap;
+      justify-content: center;
+    }
   }
 
   .logo {
@@ -44,8 +48,13 @@ $colors: (
       width: 25%;
       margin: 10px 0px 20px 0px;
     }
+    @include media-max-width(1000px) {
+      width: 30%;
+      margin: 10px 10px;
+    }
     @include media-max-width(725px) {
-      margin: 0px 5px 0px 5px;
+      width: 35%;
+      margin: 10px 10px;
     }
   }
 
@@ -211,11 +220,14 @@ $colors: (
         justify-content: center;
         align-items: center;
       }
+      @include media-max-width(725px) {
+        width: 135%;
+      }
     }
 
     .main-footer__social {
       display: flex;
-      margin: 5px 0;
+      margin: 5px 0px 20px 0px;
 
       .instagram {
         cursor: pointer;
@@ -285,11 +297,19 @@ $colors: (
           box-shadow: 0px 0px 15px 10px #de0421;
         }
       }
+      @include media-max-width(545px) {
+        margin: 0px 0px 30px 0px;
+      }
     }
     @include media-max-width(1000px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+    @include media-max-width(690px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 10px;
     }
   }
 
@@ -310,13 +330,32 @@ $colors: (
         flex-direction: wrap;
         justify-content: center;
         align-items: center;
+        // margin: 0 auto;
+      }
+      @include media-max-width(690px) {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: wrap;
+      }
+      @include media-max-width(545px) {
+        display: flex;
+        width: 100%;
         margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
       }
     }
 
     .main-footer__classification-links {
       text-align: left;
-      margin-right: 3rem;
+      margin-right: 45px;
+
+      @include media-max-width(545px) {
+        display: flex;
+        flex-direction: column;
+        // margin: 0 auto;
+        align-items: center;
+      }
     }
 
     ul {
@@ -324,6 +363,7 @@ $colors: (
     }
 
     .main-footer__classification-links h3 {
+      margin: 0 auto;
       font-weight: 600;
       font-size: 1.5rem;
       color: #ffb342;
