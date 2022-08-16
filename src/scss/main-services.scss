@@ -95,11 +95,13 @@
       }
 
       @include media-max-width(700px) {
+        margin-bottom: 500px;
         width: 90%;
       }
 
       @include media-max-width(500px) {
         width: 95%;
+        margin-bottom: 600px;
       }
 
       @include media-max-width(450px) {
