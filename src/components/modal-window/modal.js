@@ -60,4 +60,5 @@ require("../../scss/modal/modal.scss");
 //   // });
 // }
 
-// module.exports = modal;
+
+module.exports = modal;
