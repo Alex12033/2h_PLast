@@ -4,6 +4,7 @@ require('../../scss/drainage-systems.scss');
 require('../../scss/header.scss');
 require('../../scss/burger-menu.scss');
 require('../../scss/index.scss');
+require('../../scss/footer.scss')
 
 function fncDrainageSystems() {
   class Product {
@@ -16,9 +17,9 @@ function fncDrainageSystems() {
 
   fncProductList(
     new Product(
-      'Наповнення дренажного дренажу - AquaBox WDR',
-      '../src/assets/img_categories/drainage-systems/1.jpg',
-      'Засипка використовується для аеробного очищення стічних вод'
+      'Дренажні блоки GEOdek/WBOX',
+      '../src/assets/img_categories/drainage-systems/1.png',
+      '2Н WBOX – це поліпропіленові завантаження  для ретенційних і дренажних резервуарів'
     )
   );
 }

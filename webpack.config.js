@@ -22,6 +22,7 @@ module.exports = {
       "./src/main-water-purification-and-treatment.js"
     ),
     productlList: path.resolve(__dirname, "./src/product-list.js"),
+    fishFarming: path.resolve(__dirname, "./src/src-fish-farming.js"),
   },
 
   output: {
@@ -131,6 +132,15 @@ module.exports = {
       //   "sign_up_form",
       // ],
       chunks: ["waterPurification"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "fish-farming.html",
+      template: "./public/fish-farming.html",
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
+      chunks: ["fishFarming"],
     }),
   ],
 };
