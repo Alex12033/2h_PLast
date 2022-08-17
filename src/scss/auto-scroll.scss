@@ -1,0 +1,55 @@
+@mixin media-max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  top: 85%;
+  left: 85%;
+  z-index: 200;
+  width: 100px;
+  height: 100px;
+
+  animation: 0.4s smoothDisplay ease-in;
+
+  @include media-max-width(800px) {
+    left: calc(85% - 5%);
+  }
+
+  @include media-max-width(550px) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @include media-max-width(400px) {
+    width: 60px;
+    height: 60px;
+    top: 90%;
+  }
+
+  background: url("../assets/arrow-up.png");
+  background-position: center center;
+  background-size: cover;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(-10px);
+  }
+
+  &:hover {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes smoothDisplay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
