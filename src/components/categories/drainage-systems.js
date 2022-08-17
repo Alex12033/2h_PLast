@@ -4,7 +4,7 @@ require('../../scss/drainage-systems.scss');
 require('../../scss/header.scss');
 require('../../scss/burger-menu.scss');
 require('../../scss/index.scss');
-require('../../scss/footer.scss')
+require('../../scss/footer.scss');
 
 function fncDrainageSystems() {
   class Product {

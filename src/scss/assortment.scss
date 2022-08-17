@@ -26,9 +26,6 @@ $colors: (
     justify-content: center;
     align-items: center;
     min-width: 33%;
-    // background-position: 50% 50%;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     height: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     margin: 2px;
@@ -37,7 +34,6 @@ $colors: (
       display: flex;
       font-size: 24px;
       font-weight: bold;
-      height: 78px;
       background: rgba(0, 0, 0, 0.7);
       align-items: center;
       justify-content: center;
@@ -80,7 +76,6 @@ $colors: (
     justify-content: center;
     text-align: center;
     padding: 10px;
-    // margin: 30px 20px;
     border-radius: 10px;
     background: map-get($colors, main);
     width: 200px;

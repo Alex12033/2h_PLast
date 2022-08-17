@@ -4,6 +4,7 @@ require('../../scss/industrial-water-cooling.scss');
 require('../../scss/header.scss');
 require('../../scss/burger-menu.scss');
 require('../../scss/index.scss');
+require('../../scss/footer.scss');
 
 function fncIndustrialWaterCooling() {
   class Product {
