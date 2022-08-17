@@ -1,6 +1,6 @@
 let fncProductList = require('./product-list');
 let burgerMenu = require('../burger_menu');
-require('../../scss/water-purification-and-treatment.scss');
+require('../../scss/categories-cards-pages.scss');
 require('../../scss/header.scss');
 require('../../scss/burger-menu.scss');
 require('../../scss/index.scss');
