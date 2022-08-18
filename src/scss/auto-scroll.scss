@@ -37,11 +37,7 @@
   cursor: pointer;
 
   &:active {
-    transform: translateY(-10px);
-  }
-
-  &:hover {
-    transform: translateY(-15px);
+    transform: translateY(-50px);
   }
 }
 
