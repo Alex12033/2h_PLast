@@ -1,6 +1,6 @@
 require("../../scss/modal/timer.scss");
 
-let date = new Date("Aug 15 2022 09:55:00");
+let date = new Date("Sep 01 2022 00:00:00");
 
 function timer() {
   let now = new Date();
@@ -12,7 +12,7 @@ function timer() {
   let seconds = Math.floor(gap / 1000) % 60;
 
   if (gap < 0) {
-    days = days + 7;
+    days = days + 14;
     hours = hours + 24;
     minutes = minutes + 60;
     seconds = seconds + 60;
