@@ -21,7 +21,7 @@ module.exports = {
       __dirname,
       "./src/main-water-purification-and-treatment.js"
     ),
-    productlList: path.resolve(__dirname, "./src/product-list.js"),
+    productlList: path.resolve(__dirname, "./src/product-list.js")
   },
 
   output: {
@@ -131,6 +131,6 @@ module.exports = {
       //   "sign_up_form",
       // ],
       chunks: ["waterPurification"],
-    }),
+    })
   ],
 };

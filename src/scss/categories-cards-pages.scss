@@ -93,7 +93,7 @@
   
     p {
       width: 300px;
-      font-size: 18px;
+      font-size: 15px;
       color: #ffb342;
       margin: 5px;
     }
@@ -114,6 +114,14 @@
         cursor: pointer;
         color: white;
       }
+    }
+  }
+
+  .main-footer {
+    margin: 0 !important;
+
+    .info-all {
+      padding-bottom: 15px !important;
     }
   }
   
