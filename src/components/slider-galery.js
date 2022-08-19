@@ -1,37 +1,27 @@
-require('../scss/contact-form.scss');
+require('../scss/projects.scss');
 
-let next = document.querySelectorAll(".next");
-let prev = document.querySelectorAll(".prev");
+let dotsSlider = document.querySelectorAll('.gallery__slider');
 
-let dotsSlider = document.querySelectorAll(".reviews__slider");
-
-function reviewsSlider() {
+function projectSlider() {
   let slideIndex = 1;
   showSlides(slideIndex);
 
-  next.forEach((n) => {
-    n.addEventListener('click', () => {
-        showSlides((slideIndex += 1));
-  }) 
-  });
+    // const windowWidht = window.innerWidth;
+    // if (windowWidht <= 800) {
+    //   console.log('rtyhjkl;jhgfgghj');
+    // }
 
-  prev.forEach((p) => {
-    p  .addEventListener('click', () => {
-        showSlides((slideIndex -= 1));
-  })
-  });
-
-  dotsSlider.forEach(dot => {
+  dotsSlider.forEach((dot) => {
     dot.addEventListener('click', (event) => {
       showSlides((slideIndex = event.target.id));
     });
-  })
-
+  });
 
   function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("rewievs");
-    let dots = document.getElementsByClassName("reviews__slider-item");
+    let slides = document.getElementsByClassName('project-gallery-card');
+    let dots = document.getElementsByClassName('gallery__slider-item');
+
     if (n > slides.length) {
       slideIndex = 1;
     }
@@ -39,21 +29,23 @@ function reviewsSlider() {
       slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].style.display = 'none';
     }
     for (i = 0; i < dots.length; i++) {
-    slides[slideIndex - 1].style.display = "block";
+      dots[i].className = dots[i].className.replace('deystvuyus', '');
     }
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].className += ' deystvuyus';
   }
 
   //                  Mobile SWIPE
-  const parag = document.querySelectorAll(".rewievs");
+  const parag = document.querySelectorAll('.project-gallery-card');
 
   parag.forEach((n) => {
-    n.addEventListener("touchstart", handleTouchStart, false);
+    n.addEventListener('touchstart', handleTouchStart, false);
   });
   parag.forEach((n) => {
-    n.addEventListener("touchmove", handleTouchMove, false);
+    n.addEventListener('touchmove', handleTouchMove, false);
   });
 
   let x1 = null;
@@ -87,4 +79,4 @@ function reviewsSlider() {
   }
 }
 
-module.exports = reviewsSlider;
+module.exports = projectSlider;

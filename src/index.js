@@ -4,6 +4,7 @@ let timer = require('./components/modal-window/timer');
 let modal = require('./components/modal-window/modal');
 let slider = require('./components/slider');
 let autoScroll = require('./components/auto-scroll');
+let sliderGalery = require('./components/slider-galery');
 
 autoScroll();
 component();
@@ -11,3 +12,4 @@ burgerMenu();
 timer();
 modal();
 slider();
+sliderGalery();
