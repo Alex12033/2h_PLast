@@ -603,7 +603,9 @@
                 </a>
             </div>
         </div>
-        
+
+        <div class="msg-for-user"></div>
+
         <img class="loader" src="../src/assets/loader-form.svg">
 
         <div class="contact-form-right">
@@ -729,17 +731,22 @@
         </div>
 
     </footer>
+
+
     <div class="modal">
+
         <div class="modal__dialog">
+
             <div class="modal__content">
                 <form action="input">
+                    
+                    <div class="msg-for-user-modal"></div>
+                    <img class="loader-modal" src="../src/assets/loader-form.svg">
+                    
                     <div class="modal__backdrop-message">
                         <div class="modal__message"></div>
                     </div>
                     <div class="modal__backdrop-loader">
-                        <div class="modal__loader">
-                            <img src="./assets/loader.svg" alt="loader">
-                        </div>
                     </div>
                     <div data-close class="modal__close">&times;</div>
                     <div class="modal__title">МИ З ВАМИ ЗВ'ЯЖЕМОСЬ ЯКНАЙШВИДШЕ!</div>
@@ -780,4 +787,5 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
+
 </html>

@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   @include media-max-width(900px) {
     flex-direction: column;
@@ -216,12 +217,32 @@
     }
   }
 
+  .msg-for-user {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    
+    background:rgb(28, 6, 118);
+    width: 70%;
+    height: 200px;
+    color: white;
+    font-size: 20px;
+    
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    opacity: 1;
+    transform: translate(-50%, 50%);
+  }
+
   .loader {
     display: none;
     position: fixed;
     width: 250px;
     left: 50%;
-    top: 25%;
+    top: 20%;
    
     border-radius: 90%;
     transform: translate(-50%, 50%);

@@ -5,8 +5,9 @@ let modal = require('./components/modal-window/modal');
 let slider = require('./components/slider');
 let autoScroll = require('./components/auto-scroll');
 let mailer = require('./components/mailer-forms');
+let modalMailer = require('./components/modal-window/modal-mailer');
 
-
+modalMailer();
 mailer();
 autoScroll();
 component();
