@@ -52,7 +52,7 @@
     justify-content: center;
     background: white;
     width: 30%;
-    min-width: 300px;
+    min-width: 310px;
     height: 450px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     margin: 20px;
@@ -94,7 +94,8 @@
     text-align: center;
   
     p {
-      width: 300px;
+      width: 97%;
+      min-width: 300px;
       font-size: 15px;
       color: #ffb342;
       margin: 5px;
