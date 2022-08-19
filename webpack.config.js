@@ -12,8 +12,8 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, "./src/index.js"),
     categories: path.resolve(__dirname, "./src/categories.js"),
-    drainageSystems: path.resolve(__dirname, "./src/drainage-system.js"),
-    industrialWater: path.resolve(
+    dSystems: path.resolve(__dirname, "./src/drainage-system.js"),
+    industrWaterCooling: path.resolve(
       __dirname,
       "./src/main-industrial-water-cooling.js"
     ),
@@ -59,6 +59,10 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
+      {
+        test: /\.pug$/,
+        loader: '@webdiscus/pug-loader',
+      }
     ],
   },
 
@@ -100,37 +104,21 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      filename: "drainage-systems.html",
-      template: "./public/drainage-systems.html",
-
-      // excludeChunks: [
-      //   "login_form",
-      //   "sign_up_form",
-      // ],
-
-      chunks: ["drainageSystems"],
+      template: path.join(__dirname, './public/pug/categories_cards/drainage-systems.pug'),
+      filename: 'dSystems.html',
+      chunks: ["dSystems"],
     }),
 
     new HtmlWebpackPlugin({
-      filename: "industrial-water-cooling.html",
-      template: "./public/industrial-water-cooling.html",
-
-      // excludeChunks: [
-      //   "login_form",
-      //   "sign_up_form",
-      // ],
-
-      chunks: ["industrialWater"],
+      template: path.join(__dirname, './public/pug/categories_cards/industrial-water-cooling.pug'),
+      filename: 'industrWaterCooling.html',
+      chunks: ["industrWaterCooling"],
     }),
 
     new HtmlWebpackPlugin({
-      filename: "water-purification-and-treatment.html",
-      template: "./public/water-purification-and-treatment.html",
-      // excludeChunks: [
-      //   "login_form",
-      //   "sign_up_form",
-      // ],
+      template: path.join(__dirname, './public/pug/categories_cards/water-purification-and-treatment.pug'),
+      filename: 'waterPurification.html',
       chunks: ["waterPurification"],
-    })
+    }),
   ],
 };

@@ -1,0 +1,70 @@
+mixin header(mainTitle, title)
+  doctype html
+  html(lang="en")
+    head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      title= mainTitle
+    body 
+      .mobile-nav__backdrop
+        nav.mobile-nav
+          .mobile-nav__wrapper
+            .mobile-nav__close
+              svg(viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg')
+                line(x1='0' x2='100' y1='0' y2='100')
+                line(x1='0' x2='100' y1='100' y2='0')
+            ul.mobile-nav__items
+              li.mobile-nav__item
+                a(href='./index.html') Головна
+              li.mobile-nav__item
+                a(href='#') Про нас
+              li.mobile-nav__item
+                a(href='./assortment.html') Категорії товару
+              li.mobile-nav__item
+                a(href='#') Наші контакти
+            .mobile-nav__questions
+              .main-nav__questions-item
+                a(href='#') Виникли запитання?
+      .hours-background
+        .hours-social.container
+          span.hours Час роботи: з 9.30 до 18.00
+          .social
+            img.facebook(src='../src/assets/facebook.png' alt='facebook')
+            img.instagram(src='../src/assets/twitter.png' alt='twitter')
+            img.pinterest(src='../src/assets/pinterest.png' alt='pinterest')
+            img.instagram(src='../src/assets/instagram.png' alt='instagram')
+      .email-logo.container
+        a(href='./index.html')
+          img.logo(src='../src/assets/logo.png' alt='logo')
+        .info
+          .mail
+            img.mail-logo(src='../src/assets/mail.png' alt='logo')
+            div
+              .mail-title Емаїл
+              .mail-adress 2hplast@gmail.com
+          .phone
+            img.phone-logo(src='../src/assets/phone.png' alt='logo')
+            div
+              .phone-title Нащі Телефони
+              .phone-number +38 (097) 449 98 61
+              .phone-number +38 (095) 449 98 61
+      .navigation-bar.container
+        ul
+          li
+            a(href='./index.html') Головна
+          li
+            a(href='#') Про Нас
+          li
+            a(href='./assortment.html') Категорії Товару
+          li
+            a(href='#') Наші Контакти
+        button.question-btn Have Any Question ?
+      .assortment__all
+        .assortment__all--btn-burger
+          // BURGER-MENU-BTN
+          button.toggle-button
+            span.toggle-button__bar
+            span.toggle-button__bar
+            span.toggle-button__bar
+        h2= title 
