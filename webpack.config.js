@@ -21,7 +21,8 @@ module.exports = {
       __dirname,
       "./src/main-water-purification-and-treatment.js"
     ),
-    productlList: path.resolve(__dirname, "./src/product-list.js")
+    productlList: path.resolve(__dirname, "./src/product-list.js"),
+    aboutUs: path.resolve(__dirname, "./src/components/about-us.js"),
   },
 
   output: {
@@ -119,6 +120,12 @@ module.exports = {
       template: path.join(__dirname, './public/pug/categories_cards/water-purification-and-treatment.pug'),
       filename: 'waterPurification.html',
       chunks: ["waterPurification"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/about-us.pug'),
+      filename: 'aboutUs.html',
+      chunks: ["aboutUs"],
     }),
   ],
 };
