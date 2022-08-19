@@ -34,7 +34,7 @@ function modal() {
     }
   });
 
-  const modalTimeId = setTimeout(openModal, 3000);
+  const modalTimeId = setTimeout(openModal, 5000);
 
   function showModalByScroll() {
     if (
