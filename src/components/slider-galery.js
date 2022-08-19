@@ -4,12 +4,11 @@ let dotsSlider = document.querySelectorAll('.gallery__slider');
 
 function projectSlider() {
   let slideIndex = 1;
-  showSlides(slideIndex);
 
-    // const windowWidht = window.innerWidth;
-    // if (windowWidht <= 800) {
-    //   console.log('rtyhjkl;jhgfgghj');
-    // }
+  const windowWidht = window.innerWidth;
+  if (windowWidht <= 800) {
+    showSlides(slideIndex);
+  }
 
   dotsSlider.forEach((dot) => {
     dot.addEventListener('click', (event) => {
