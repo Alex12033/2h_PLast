@@ -24,7 +24,9 @@ module.exports = {
     productlList: path.resolve(__dirname, "./src/product-list.js"),
     aboutUs: path.resolve(__dirname, "./src/components/about-us.js"),
     blocksWBOX: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
-    block2HTKR: path.resolve(__dirname, "./src/components/categories/cards-descr.js")
+    block2HTKR: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    download2HNET: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    freeFloatingBCN: path.resolve(__dirname, "./src/components/categories/cards-descr.js")
   },
 
   output: {
@@ -140,6 +142,18 @@ module.exports = {
       template: path.join(__dirname, './public/pug/categories_cards/cards-description/drainage-system/2_ block-loading2HTKR-312.pug'),
       filename: 'block2HTKR.html',
       chunks: ["block2HTKR"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/drainage-system/3_net-download2HNET-150.pug'),
+      filename: 'download2HNET.html',
+      chunks: ["download2HNET"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/drainage-system/4_ BCN-free-floating-polypropylene-loading.pug'),
+      filename: 'freeFloatingBCN.html',
+      chunks: ["freeFloatingBCN"],
     })
   ],
 };
