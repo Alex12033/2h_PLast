@@ -26,7 +26,14 @@ module.exports = {
     blocksWBOX: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
     block2HTKR: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
     download2HNET: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
-    freeFloatingBCN: path.resolve(__dirname, "./src/components/categories/cards-descr.js")
+    freeFloatingBCN: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    irrMachine2HFKP: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    irrMachine2HFСP: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    meshSprinkler2HNET: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    dripCatcherTER: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    polypropyleneDropCatcher: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    airIntakeLouvers: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    irrigationNozzles: path.resolve(__dirname, "./src/components/categories/cards-descr.js")
   },
 
   output: {
@@ -154,6 +161,48 @@ module.exports = {
       template: path.join(__dirname, './public/pug/categories_cards/cards-description/drainage-system/4_ BCN-free-floating-polypropylene-loading.pug'),
       filename: 'freeFloatingBCN.html',
       chunks: ["freeFloatingBCN"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/industrial-water-cooling/1_irrigation-machine2HFKP.pug'),
+      filename: 'irrMachine2HFKP.html',
+      chunks: ["irrMachine2HFKP"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/industrial-water-cooling/2_irrigation-machine2HFСP.pug'),
+      filename: 'irrMachine2HFСP.html',
+      chunks: ["irrMachine2HFСP"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/industrial-water-cooling/3_mesh-sprinkler2HNET-150.pug'),
+      filename: 'meshSprinkler2HNET.html',
+      chunks: ["meshSprinkler2HNET"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/industrial-water-cooling/4_drip-catcher-TER-130.pug'),
+      filename: 'dripCatcherTER.html',
+      chunks: ["dripCatcherTER"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/industrial-water-cooling/5_polypropylene-droplet-catcher-TAR-155.pug'),
+      filename: 'polypropyleneDropCatcher.html',
+      chunks: ["polypropyleneDropCatcher"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/industrial-water-cooling/6_air-intake-louvers2H-LEP-065.pug'),
+      filename: 'airIntakeLouvers.html',
+      chunks: ["airIntakeLouvers"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/industrial-water-cooling/7_ irrigation-nozzles-2H-SPN.pug'),
+      filename: 'irrigationNozzles.html',
+      chunks: ["irrigationNozzles"],
     })
   ],
 };

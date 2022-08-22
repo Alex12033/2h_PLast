@@ -8,10 +8,11 @@ require('../../scss/footer.scss');
 
 function fncWaterPurification() {
   class Product {
-    constructor(title, image, descr) {
+    constructor(title, image, descr, path) {
       this.title = title;
       this.imageUrl = image;
       this.descrition = descr;
+      this.path = path;
     }
   }
 
