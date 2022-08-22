@@ -23,7 +23,8 @@ module.exports = {
     ),
     productlList: path.resolve(__dirname, "./src/product-list.js"),
     aboutUs: path.resolve(__dirname, "./src/components/about-us.js"),
-    blocksWBOX: path.resolve(__dirname, "./src/components/categories/cards-descr.js")
+    blocksWBOX: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    block2HTKR: path.resolve(__dirname, "./src/components/categories/cards-descr.js")
   },
 
   output: {
@@ -133,6 +134,12 @@ module.exports = {
       template: path.join(__dirname, './public/pug/categories_cards/cards-description/drainage-system/1_drainage-blocksWBOX.pug'),
       filename: 'blocksWBOX.html',
       chunks: ["blocksWBOX"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/drainage-system/2_ block-loading2HTKR-312.pug'),
+      filename: 'block2HTKR.html',
+      chunks: ["block2HTKR"],
     })
   ],
 };
