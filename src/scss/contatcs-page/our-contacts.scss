@@ -64,8 +64,8 @@
         display: block;
         font-family: "Mulish";
         font-style: normal;
-        font-weight: 600;
-        font-size: 30px;
+        font-weight: 400;
+        font-size: 28px;
         text-align: center;
         color: #1c2752;
         margin-top: 22px;
@@ -132,11 +132,11 @@
         align-items: center;
         text-align: center;
         font-size: 22px;
-        font-weight: 600;
+        font-weight: 500;
         opacity: 0;
         transition: all 0.3s ease;
-        bottom: 75px;
-        left: 75px;
+        bottom: 70px;
+        left: 60px;
         position: absolute;
         will-change: transform;
         color: #1d2753;
@@ -152,7 +152,7 @@
         // opacity: 0;
         transition: all 0.3s ease;
         bottom: 40px;
-        left: 45px;
+        left: 27px;
         position: absolute;
         will-change: transform;
         color: #1d2753;
@@ -165,14 +165,12 @@
         align-items: center;
         text-align: center;
         font-size: 20px;
-        // opacity: 0;
         transition: all 0.3s ease;
-        bottom: 20px;
-        left: 45px;
+        bottom: 15px;
+        left: 27px;
         position: absolute;
         will-change: transform;
         color: #1d2753;
-        // text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
       }
 
       .phone-all {
@@ -198,12 +196,12 @@
           .our-phone {
             color: #1c2752;
             font-size: 22px;
-            font-weight: 600;
+            font-weight: 500;
           }
 
           .our-phone__number {
             color: #1c2752;
-            font-size: 20;
+            font-size: 19px;
           }
         }
       }
@@ -240,19 +238,18 @@
           .our-time {
             color: #1c2752;
             font-size: 22px;
-            font-weight: 600;
+            font-weight: 500;
           }
 
           .our-time__number {
             color: #1c2752;
-            font-size: 20;
+            font-size: 20px;
           }
         }
       }
 
       .explainer {
-        font-weight: 300;
-        font-size: 28px;
+        font-size: 25px;
         color: #ffb342;
         transition: all 0.6s ease;
         width: 100%;
@@ -268,335 +265,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-
-      .info-all__contact {
-        display: flex;
-        margin: 100px 0;
-
-        .info {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: flex-start;
-          @include media-max-width(1010px) {
-            display: flex;
-          }
-          @include media-max-width(725px) {
-            display: flex;
-          }
-
-          .mail {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 0px 10px 10px 0px;
-
-            .mail-info {
-              margin: 0 10px;
-              color: rgb(0, 0, 0);
-            }
-
-            .mail-logo {
-              transition: 0.5s ease-in;
-              margin-right: 15px;
-              height: 80px;
-              cursor: pointer;
-              @include media-max-width(1024px) {
-                cursor: none;
-              }
-              @include media-max-width(1000px) {
-                // margin: 0px 0px 10px 0px;
-              }
-
-              &:hover {
-                transform: rotateX(360deg);
-              }
-            }
-            @include media-max-width(1175px) {
-              display: flex;
-              // flex-direction: column;
-            }
-            @include media-max-width(1010px) {
-              display: flex;
-              margin: 0px 0px 10px 0px;
-              // flex-direction: row;
-            }
-
-            a {
-              display: flex;
-              align-items: center;
-              // margin-top: 0px;
-              color: #ffff;
-              outline: none;
-              text-decoration: none;
-              // transition: 0.3s ease-in-out;
-
-              img {
-                animation: wiggle 1.5s infinite;
-              }
-
-              &:visited {
-                color: #ffff;
-              }
-
-              span {
-                margin-left: 20px;
-                font-family: "Mulish";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 30px;
-                color: #ffffff;
-              }
-
-              @keyframes wiggle {
-                0% {
-                  transform: rotateZ(0);
-                }
-                50% {
-                  transform: rotateZ(-10deg);
-                }
-                100% {
-                  transform: rotateZ(10deg);
-                }
-              }
-            }
-          }
-
-          .phone {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 10px 10px 10px 0px;
-
-            .phone-info {
-              margin: 0px 10px;
-              color: rgb(0, 0, 0);
-            }
-
-            .phone-logo {
-              transition: 0.5s ease-in;
-              margin-right: 27px;
-              height: 80px;
-              cursor: pointer;
-              @include media-max-width(1024px) {
-                cursor: none;
-              }
-              @include media-max-width(1000px) {
-                margin: 0px 0px 10px 0px;
-              }
-
-              &:hover {
-                transform: rotateZ(360deg);
-              }
-            }
-            @include media-max-width(1175px) {
-              display: flex;
-              // flex-direction: column;
-            }
-            @include media-max-width(1010px) {
-              display: flex;
-              margin: 0px 0px 10px 0px;
-              // flex-direction: row;
-            }
-
-            a {
-              display: flex;
-              align-items: center;
-              // margin-top: 20px;
-              color: #ffff;
-              outline: none;
-              text-decoration: none;
-              transition: 0.3s ease-in-out;
-
-              img {
-                animation: wiggle 2s infinite;
-              }
-
-              &:visited {
-                color: #ffff;
-              }
-
-              span {
-                margin-left: 20px;
-                font-family: "Mulish";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 30px;
-                color: #ffffff;
-              }
-
-              @keyframes wiggle {
-                0% {
-                  transform: rotateZ(0);
-                }
-                50% {
-                  transform: rotateZ(-10deg);
-                }
-                100% {
-                  transform: rotateZ(10deg);
-                }
-              }
-            }
-          }
-
-          .location {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 10px 30px 0px 0px;
-
-            .location-info {
-              margin: 0px 10px;
-              color: rgb(0, 0, 0);
-            }
-
-            .location-logo {
-              transition: 0.5s ease-in;
-              margin-right: 15px;
-              height: 80px;
-              cursor: pointer;
-              @include media-max-width(1024px) {
-                cursor: none;
-              }
-              @include media-max-width(1000px) {
-                margin: 0px 0px 10px 0px;
-              }
-
-              &:hover {
-                transform: rotateX(360deg);
-              }
-            }
-            @include media-max-width(1175px) {
-              display: flex;
-              // flex-direction: column;
-            }
-            @include media-max-width(1010px) {
-              display: flex;
-              flex-direction: row;
-            }
-          }
-          @include media-max-width(1000px) {
-            display: flex;
-            align-items: flex-start;
-          }
-
-          a {
-            display: flex;
-            align-items: center;
-            // margin-top: 0px;
-            color: #ffff;
-            outline: none;
-            text-decoration: none;
-            // transition: 0.3s ease-in-out;
-
-            img {
-              animation: wiggle 1.5s infinite;
-            }
-
-            &:visited {
-              color: #ffff;
-            }
-
-            span {
-              margin-left: 20px;
-              font-family: "Mulish";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 30px;
-              color: #ffffff;
-            }
-
-            @keyframes wiggle {
-              0% {
-                transform: rotateZ(0);
-              }
-              50% {
-                transform: rotateZ(-10deg);
-              }
-              100% {
-                transform: rotateZ(10deg);
-              }
-            }
-          }
-
-          .time-outline {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 20px 10px 10px 0px;
-
-            .time-outline-info {
-              margin: 0 10px;
-              color: rgb(0, 0, 0);
-            }
-
-            .time-outline-logo {
-              transition: 0.5s ease-in;
-              margin-right: 15px;
-              height: 80px;
-              cursor: pointer;
-              @include media-max-width(1024px) {
-                cursor: none;
-              }
-              @include media-max-width(1000px) {
-                // margin: 0px 0px 10px 0px;
-              }
-
-              &:hover {
-                transform: rotateX(360deg);
-              }
-            }
-            @include media-max-width(1175px) {
-              display: flex;
-              // flex-direction: column;
-            }
-            @include media-max-width(1010px) {
-              display: flex;
-              margin: 0px 0px 10px 0px;
-              // flex-direction: row;
-            }
-
-            a {
-              display: flex;
-              align-items: center;
-              // margin-top: 0px;
-              color: #ffff;
-              outline: none;
-              text-decoration: none;
-              // transition: 0.3s ease-in-out;
-
-              img {
-                animation: wiggle 1.5s infinite;
-              }
-
-              &:visited {
-                color: #ffff;
-              }
-
-              span {
-                margin-left: 20px;
-                font-family: "Mulish";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 30px;
-                color: #ffffff;
-              }
-
-              @keyframes wiggle {
-                0% {
-                  transform: rotateZ(0);
-                }
-                50% {
-                  transform: rotateZ(-10deg);
-                }
-                100% {
-                  transform: rotateZ(10deg);
-                }
-              }
-            }
-          }
-        }
       }
     }
 
@@ -633,7 +301,7 @@
         font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
         color: #1c2752;
         margin-top: 22px;
