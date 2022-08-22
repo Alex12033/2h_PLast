@@ -1,6 +1,6 @@
 require("../../scss/modal/timer.scss");
 
-let date = new Date("Sep 01 2022 00:00:00");
+let date = new Date("Sep 30 2022 00:00:00");
 
 function timer() {
   let now = new Date();
