@@ -101,10 +101,12 @@
       margin: 5px;
     }
   
-    button {
+    .path {
+      display: block;
       text-align: center;
+      text-decoration: none;
       padding: 10px;
-      margin: 10px;
+      margin: 10px auto;
       border-radius: 10px;
       border: solid 1px #1c2752;
       background: #ffb342;
@@ -114,7 +116,6 @@
       color: #1c2752;
   
       &:hover {
-        cursor: pointer;
         color: white;
       }
     }

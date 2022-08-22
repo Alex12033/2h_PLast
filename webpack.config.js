@@ -23,6 +23,7 @@ module.exports = {
     ),
     productlList: path.resolve(__dirname, "./src/product-list.js"),
     aboutUs: path.resolve(__dirname, "./src/components/about-us.js"),
+    blocksWBOX: path.resolve(__dirname, "./src/components/categories/cards-descr.js")
   },
 
   output: {
@@ -127,5 +128,11 @@ module.exports = {
       filename: 'aboutUs.html',
       chunks: ["aboutUs"],
     }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/drainage-system/1_drainage-blocksWBOX.pug'),
+      filename: 'blocksWBOX.html',
+      chunks: ["blocksWBOX"],
+    })
   ],
 };

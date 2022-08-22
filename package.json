@@ -28,6 +28,6 @@
     "webpack-dev-server": "^4.9.3"
   },
   "devDependencies": {
-    "@webdiscus/pug-loader": "^2.8.1"
+    "@webdiscus/pug-loader": "^2.8.2"
   }
 }
