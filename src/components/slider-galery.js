@@ -101,9 +101,9 @@ function projectSlider() {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
-        showSlides((slideIndex += 1));
-      } else {
         showSlides((slideIndex -= 1));
+      } else {
+        showSlides((slideIndex += 1));
       }
     }
     x1 = null;
