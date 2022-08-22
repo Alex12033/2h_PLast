@@ -33,6 +33,19 @@
         .description {
             padding: 30px;
             font-size: 18px;
+            width: 80%;
+            margin: 0 auto;
+
+            ul {
+                margin: 20px auto;
+                text-align: center;
+                width: 70%;
+                padding-right: 40px;
+
+                li {
+                    text-align: center;
+                }
+            }
 
             .italic {
                 font-style: italic;
@@ -40,7 +53,7 @@
         }
     
         .table {
-            width: 70%;
+            width: 90%;
             margin: 0 auto;
             font-size: 18px;
             font-weight: bold;
