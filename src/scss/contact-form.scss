@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   @include media-max-width(900px) {
     flex-direction: column;
@@ -64,7 +65,6 @@
         50% {
           opacity: 1;
         }
-
       }
 
       @include media-max-width(1300px) {
@@ -215,6 +215,38 @@
         }
       }
     }
+  }
+
+  .msg-for-user {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    
+    background:rgb(28, 6, 118);
+    width: 70%;
+    height: 200px;
+    color: white;
+    font-size: 20px;
+    
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    opacity: 1;
+    transform: translate(-50%, 50%);
+  }
+
+  .loader {
+    display: none;
+    position: fixed;
+    width: 250px;
+    left: 50%;
+    top: 20%;
+   
+    border-radius: 90%;
+    transform: translate(-50%, 50%);
+    background: rgba(14, 13, 13, 0.5);
   }
 
   .contact-form-right {

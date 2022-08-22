@@ -47,17 +47,6 @@ function modal() {
   }
 
   window.addEventListener("scroll", showModalByScroll);
-
-  // //CONTACT US
-
-  // const contactUs = document.querySelector(".contact-us");
-
-  // contactUs.addEventListener("click", () => {
-  //   modal.classList.add("show");
-  //   modal.classList.remove("hide");
-  //   document.body.style.overflow = "hidden";
-  //   clearInterval(modalTimeId);
-  // });
 }
 
 

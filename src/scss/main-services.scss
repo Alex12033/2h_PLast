@@ -50,6 +50,7 @@
     }
 
     .main-services__subscription {
+      text-align: center;
       margin-top: 12px;
       font-family: "Inter";
       font-style: normal;
@@ -74,7 +75,7 @@
       align-items: center;
       flex-direction: row;
       justify-content: space-around;
-      width: 50%;
+      width: 45%;
       margin-bottom: 400px;
 
       @include media-max-width(1300px) {
@@ -155,7 +156,7 @@
     position: absolute;
     transform: translate(-50%, 50%);
     left: 50%;
-    top: 180px;
+    top: 250px;
     background-color: #ffffff;
     padding: 60px 60px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -175,12 +176,18 @@
 
     @include media-max-width(900px) {
       padding: 20px 40px;
-      top: 260px;
+      top: 320px;
       width: 90%;
     }
 
-    @include media-max-width(900px) {
-      top: 300px;
+    @include media-max-width(700px) {
+      top: 380px;
+      padding: 10px 30px;
+      text-align: center;
+    }
+
+    @include media-max-width(500px) {
+      top: 460px;
       padding: 10px 30px;
     }
 
@@ -199,9 +206,9 @@
         width: 100%;
       }
 
-      // @include media-max-width(1150px) {
-      //   width: 100%;
-      // }
+      @include media-max-width(700px) {
+        align-items: center;
+      }
 
       .our-offer {
         background: #e7e3e3;
@@ -226,6 +233,13 @@
         line-height: 58px;
         color: #1c2752;
         margin-top: 22px;
+
+        @include media-max-width(1300px) {
+          color: #ffff;
+          font-weight: 400;
+          background: rgba(#000000, 0.5);
+          padding: 5px 5px;
+        }
       }
 
       .tab-text {
