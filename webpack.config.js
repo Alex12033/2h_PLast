@@ -22,6 +22,9 @@ module.exports = {
       "./src/main-water-purification-and-treatment.js"
     ),
     productlList: path.resolve(__dirname, "./src/product-list.js"),
+
+    contactsPage: path.resolve(__dirname, "./src/our-contacts-page.js")
+
   },
 
   output: {
@@ -131,5 +134,15 @@ module.exports = {
       // ],
       chunks: ["waterPurification"],
     }),
+
+    new HtmlWebpackPlugin({
+      filename: "our-contacts.html",
+      template: "./public/our-contacts.html",
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
+      chunks: ["contactsPage"],
+    })
   ],
 };

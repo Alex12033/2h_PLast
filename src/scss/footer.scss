@@ -497,12 +497,13 @@ $colors: (
     .main-footer__links-bloc {
       display: flex;
       align-items: flex-start;
-      justify-content: flex-end;
+      justify-content: center;
 
       @include media-max-width(1000px) {
+        display: flex;
         flex-direction: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
       }
       @include media-max-width(690px) {
         display: flex;
@@ -513,7 +514,7 @@ $colors: (
         display: flex;
         width: 100%;
         margin: 0 auto;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
       }
     }
@@ -521,6 +522,7 @@ $colors: (
     .main-footer__classification-links {
       text-align: left;
       margin-right: 45px;
+      margin-left: 20px;
 
       @include media-max-width(545px) {
         display: flex;
@@ -540,6 +542,13 @@ $colors: (
       color: #ffb342;
       text-align: left;
       transition: 0.5s;
+
+      @include media-max-width(545px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px;
+
+      }
 
       &:hover,
       &:active {
