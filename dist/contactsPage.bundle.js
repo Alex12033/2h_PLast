@@ -1,2 +1,1 @@
 (()=>{var e={754:(e,o,t)=>{t(705),e.exports=function(){console.log("IamContactPage")}},705:(e,o,t)=>{"use strict";t.r(o)}},o={};function t(r){var n=o[r];if(void 0!==n)return n.exports;var a=o[r]={exports:{}};return e[r](a,a.exports,t),a.exports}t.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t(754)()})();
-//# sourceMappingURL=contactsPage.bundle.js.map

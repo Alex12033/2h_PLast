@@ -33,7 +33,7 @@ $colors: (
     }
     @include media-max-width(725px) {
       display: flex;
-      flex-direction: wrap;
+      flex-wrap: wrap;
     }
   }
 
@@ -68,7 +68,7 @@ $colors: (
   .info-all {
     display: flex;
     justify-content: space-around;
-    flex-direction: wrap;
+    flex-wrap: wrap;
     @include media-max-width(1010px) {
       display: flex;
       flex-direction: row;
@@ -371,7 +371,7 @@ $colors: (
       font-size: 18px;
       font-style: normal;
       font-weight: 300;
-      letter-spacing: 10%;
+      letter-spacing: 2px;
       margin-bottom: 20px;
 
       @include media-max-width(1000px) {
@@ -501,14 +501,14 @@ $colors: (
 
       @include media-max-width(1000px) {
         display: flex;
-        flex-direction: wrap;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
       }
       @include media-max-width(690px) {
         display: flex;
         align-items: flex-start;
-        flex-direction: wrap;
+        flex-wrap: wrap;
       }
       @include media-max-width(545px) {
         display: flex;
