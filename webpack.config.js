@@ -35,6 +35,13 @@ module.exports = {
     polypropyleneDropCatcher: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
     airIntakeLouvers: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
     irrigationNozzles: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    polypropyLoading2HTKR: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    loadVerticalChutes: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    netDownload2HNET: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    freeFloating: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    coalescentFilter: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    lamellarModules: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
+    download2GKLP: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
   },
 
   output: {
@@ -209,6 +216,48 @@ module.exports = {
       template: path.join(__dirname, './public/pug/categories_cards/cards-description/industrial-water-cooling/7_ irrigation-nozzles-2H-SPN.pug'),
       filename: 'irrigationNozzles.html',
       chunks: ["irrigationNozzles"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/water-purification/1_polypropylene-loading-2H-TKR.pug'),
+      filename: 'polypropyLoading2HTKR.html',
+      chunks: ["polypropyLoading2HTKR"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/water-purification/2_loading-with-vertical-chutes.pug'),
+      filename: 'loadVerticalChutes.html',
+      chunks: ["loadVerticalChutes"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/water-purification/3_net-download-2H-NET-150.pug'),
+      filename: 'netDownload2HNET.html',
+      chunks: ["netDownload2HNET"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/water-purification/4_free-floating-BCN.pug'),
+      filename: 'freeFloating.html',
+      chunks: ["freeFloating"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/water-purification/5_coalescent-filter-2H-FAR.pug'),
+      filename: 'coalescentFilter.html',
+      chunks: ["coalescentFilter"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/water-purification/6_lamellar-modules.pug'),
+      filename: 'lamellarModules.html',
+      chunks: ["lamellarModules"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/pug/categories_cards/cards-description/water-purification/7_download-2G-KLP-638.pug'),
+      filename: 'download2GKLP.html',
+      chunks: ["download2GKLP"],
     })
   ],
 };
