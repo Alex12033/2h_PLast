@@ -71,7 +71,6 @@
 
                 @include media-max-width(700px) {
                     width: 90%;
-                    list-style: circle;
                 }
 
                 li {
@@ -93,7 +92,7 @@
     
         .table {
             width: 90%;
-            margin: 0 auto;
+            margin: 20px auto;
             font-size: 18px;
             font-weight: bold;
             color: white;
@@ -120,7 +119,7 @@
                 padding: 10px auto;
 
                 @include media-max-width(700px) {
-                    font-size: 14px;
+                    font-size: 13.5px;
                 }
             }
 
