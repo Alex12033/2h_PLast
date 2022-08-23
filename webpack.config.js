@@ -22,6 +22,7 @@ module.exports = {
       "./src/main-water-purification-and-treatment.js"
     ),
     productlList: path.resolve(__dirname, "./src/product-list.js"),
+    contactsPage: path.resolve(__dirname, "./src/our-contacts-page.js"),
     aboutUs: path.resolve(__dirname, "./src/components/about-us.js"),
     blocksWBOX: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
     block2HTKR: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
@@ -49,7 +50,7 @@ module.exports = {
     port: 8080,
   },
 
-  devtool: "source-map",
+  // devtool: "source-map",
 
   module: {
     rules: [
@@ -100,7 +101,6 @@ module.exports = {
         "waterPurification",
       ],
 
-
       chunks: ["main"],
     }),
 
@@ -131,6 +131,18 @@ module.exports = {
       template: path.join(__dirname, './public/pug/categories_cards/water-purification-and-treatment.pug'),
       filename: 'waterPurification.html',
       chunks: ["waterPurification"],
+    }),
+
+
+
+    new HtmlWebpackPlugin({
+      filename: "our-contacts.html",
+      template: "./public/our-contacts.html",
+      // excludeChunks: [
+      //   "login_form",
+      //   "sign_up_form",
+      // ],
+      chunks: ["contactsPage"],
     }),
 
     new HtmlWebpackPlugin({
