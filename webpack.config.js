@@ -34,7 +34,7 @@ module.exports = {
     dripCatcherTER: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
     polypropyleneDropCatcher: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
     airIntakeLouvers: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
-    irrigationNozzles: path.resolve(__dirname, "./src/components/categories/cards-descr.js")
+    irrigationNozzles: path.resolve(__dirname, "./src/components/categories/cards-descr.js"),
   },
 
   output: {
@@ -133,15 +133,9 @@ module.exports = {
       chunks: ["waterPurification"],
     }),
 
-
-
     new HtmlWebpackPlugin({
-      filename: "our-contacts.html",
-      template: "./public/our-contacts.html",
-      // excludeChunks: [
-      //   "login_form",
-      //   "sign_up_form",
-      // ],
+      template: path.join(__dirname, './public/pug/our-contacts.pug'),
+      filename: 'contactsPage.html',
       chunks: ["contactsPage"],
     }),
 

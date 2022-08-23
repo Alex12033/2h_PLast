@@ -16,24 +16,24 @@ mixin header(mainTitle, title)
                 line(x1='0' x2='100' y1='100' y2='0')
             ul.mobile-nav__items
               li.mobile-nav__item
-                a(href='./index.html') Головна
-              li.mobile-nav__item
-                a(href='../../dist/aboutUs.html') Про нас
+                a(href='index.html') Головна
               li.mobile-nav__item
                 a(href='./assortment.html') Категорії товару
               li.mobile-nav__item
-                a(href='#') Наші контакти
-            .mobile-nav__questions
-              .main-nav__questions-item
-                a(href='#') Виникли запитання?
+                a(href='./contactsPage.html') Наші контакти
+            //- .mobile-nav__questions
+            //-   .main-nav__questions-item
+            //-     a(href='#') Виникли запитання?
       .hours-background
         .hours-social.container
           span.hours Час роботи: з 9.30 до 18.00
           .social
-            img.facebook(src='../src/assets/facebook.png' alt='facebook')
-            img.instagram(src='../src/assets/twitter.png' alt='twitter')
-            img.pinterest(src='../src/assets/pinterest.png' alt='pinterest')
-            img.instagram(src='../src/assets/instagram.png' alt='instagram')
+            a(href='https://t.me/+380974499681')
+              img.facebook(src='../src/assets/icon2telegram.png' alt='facebook')
+            a(href='viber://chat?number=%2B380974499681')
+              img.instagram(src='../src/assets/icon2viber.png' alt='twitter')
+            a(href='https://wa.me/+380974499681')
+              img.pinterest(src='../src/assets/icon2-whatsapp.png' alt='pinterest')
       .email-logo.container
         a(href='./index.html')
           img.logo(src='../src/assets/logo.png' alt='logo')
@@ -43,23 +43,23 @@ mixin header(mainTitle, title)
             div
               .mail-title Емаїл
               .mail-adress 2hplast@gmail.com
-          .phone
+          a.phone(href='tel:+38 (097) 449 98 61')
             img.phone-logo(src='../src/assets/phone.png' alt='logo')
             div
-              .phone-title Нащі Телефони
+              .phone-title Наші Телефони
               .phone-number +38 (097) 449 98 61
               .phone-number +38 (095) 449 98 61
       .navigation-bar.container
         ul
           li
             a(href='./index.html') Головна
-          li
-            a(href='../../dist/aboutUs.html') Про Нас
+          li#about-us
+            a#about-us(href='./aboutUs.html') Про Нас
           li
             a(href='./assortment.html') Категорії Товару
           li
-            a(href='#') Наші Контакти
-        button.question-btn Have Any Question ?
+            a(href='./contactsPage.html') Наші Контакти
+        //- button.question-btn Виникли запитання ?
       .assortment__all
         .assortment__all--btn-burger
           // BURGER-MENU-BTN
@@ -67,4 +67,4 @@ mixin header(mainTitle, title)
             span.toggle-button__bar
             span.toggle-button__bar
             span.toggle-button__bar
-        h2= title 
+        h2= title
