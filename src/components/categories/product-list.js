@@ -14,7 +14,7 @@ function fncProductList(...list) {
                       <img src="${this.product.imageUrl}" alt="${this.product.title}">
                       <div class="product-item__content">
                       <p>${this.product.descrition}</p>
-                      <button>Дізнатись більше</button>
+                      <a class="path" href=${this.product.path}>Дізнатись більше</a>
                       </div>
                   </div>
                   `;
