@@ -1,0 +1,516 @@
+extends Views/layout/default
+
+//- define variables used in default layout
+block variables
+    - var isHomepage = true
+    - var mainTitle = '2H_Plast'
+
+//- add page styles
+append style
+    link(href=require('Styles/index.scss') rel='stylesheet')
+
+//- add page scripts
+append script
+    script(src=require('Scripts/index.js') defer)
+    script(src="https://smtpjs.com/v3/smtp.js")
+
+//- add main content to default layout
+block content
+    section.experience
+        div(class="left-side-experience")
+            //- img(class="greetings-image" src=require("../assets/reason-image.svg") alt="reason-image")
+
+        div(class="right-side-experience")
+            div(class="greetings")
+                img(src=require("../assets/greeting.png") alt="greeting")
+                span Вітаємо у нашій компанії
+
+            h1.title Ми забезпечуемо ваше майбутнє
+
+            .text.
+                Компанія 2hplast Ukraine була заснована в 2007 році. Ми надійні постачальники товару, яким
+                довіряють, і які обслуговують клієнтів у місті та Україні.
+                <br><br>Ми маємо великий досвід монтажу водоочистних споруд для бізнесу, тому жодна робота не надто
+                мала.
+                Наші клієнти цінують наш професіоналізм, трудову етику та конкурентоспроможні ціни.
+
+            div(class="reasons-years")
+                div(class="years-experience")
+                    span(class="years") 15
+                    span(class="years-experience__subscription") Років плідної <br>праці
+
+                div(class="reasons-why-us")
+                    span - Для всіх ваших системних вимог
+                    span - Всі роботи виконуються на совість
+                    span - Під рукою досвідчений офісний персонал
+                    span - Повна гарантія на якість виконання
+                    span - Нерухомість за розумною ціною
+
+    section.main-services
+        div(class="main-services__content")
+            div(class="tagline-offer")
+                img(src=require("../assets/offer.png") alt="offer image")
+                span Що ми пропонуємо
+
+            h1.main-services__title Основні профeсійні послуги
+
+            h3.main-services__subscription.
+                Ми маємо великий досвід комерційних установок очистних систем та систем поливу великого об'ему.<br>
+                Наші клієнти цінують наш професіоналізм, трудову етику та конкурентоспроможні ціни.
+
+            div(class="tabs-variants")
+                div(id="comercial__tab-identify" class="comercial extractor-tabs")
+                    img(class="comercial-image-btn" src=require("../assets/comercial.png") alt="offer image")
+                    span(class="comercial-text-btn") Комерційні
+
+                div(id="residential__tab-identify" class="residential")
+                    img(class="residential-image-btn" src=require("../assets/residential.png") alt="residential image")
+                    span(class="residential-image-btn") Частні
+
+                div(id="industrial__tab-identify" class="industrial")
+                    img(class="industrial-image-btn" src=require("../assets/tab-industrial.png") alt="industrial image")
+                    span(class="industrial-image-btn") Промислові
+
+        div(id="comercial" class="tab container")
+            div(class="left-side")
+                div(class="our-offer")
+                    img(src=require("../assets/tab-installation.svg") alt="offer")
+                    span Комерція
+
+
+                div(class="tab-title") Комерція
+
+                div(class="tab-text").
+                    2hplast Company Ukraine пропонує повний спектр
+                    електричних послуг відповідно до ваших потреб – від переїзду a
+                    вимикач світла, щоб завершити переведення проводів у будинок.
+
+                button(class="tab-button") Зв'язатися з нами
+
+            img(class="tab-image" src=require("../assets/tab-image-1.jpg") alt="image tab")
+
+        div(id="residential" class="tab container")
+            div(class="left-side")
+                div(class="our-offer")
+                    img(src=require("../assets/tab-installation.svg") alt="offer")
+                    span Частні
+
+                div(class="tab-title") Частні
+
+                div(class="tab-text").
+                    2hplast Company Ukraine пропонує повний спектр
+                    електричних послуг відповідно до ваших потреб – від переїзду a
+                    вимикач світла, щоб завершити переведення проводів у будинок.
+
+                button(class="tab-button") Зв'язатися з нами
+
+            img(class="tab-image" src=require("../assets/tab-image-1.jpg") alt="image tab")
+
+        div(id="industrial" class="tab container")
+            div(class="left-side")
+                div(class="our-offer")
+                    img(src=require("../assets/tab-installation.svg") alt="offer")
+                    span Промислові
+
+                div(class="tab-title") Промислові
+
+                div(class="tab-text").
+                    2hplast Company Ukraine пропонує повний спектр
+                    електричних послуг відповідно до ваших потреб – від переїзду a
+                    вимикач світла, щоб завершити переведення проводів у будинок.
+
+                button(class="tab-button") Зв'язатися з нами
+
+            img(class="tab-image" src=require("../assets/tab-image-1.jpg") alt="image tab")
+
+
+    section.our-services
+        div(class="title__section")
+            div(class="area-of-service")
+                img(src=require("../assets/area-service.svg") alt="area")
+                span Зона обслуговування
+
+            h1.title-service Наші послуги
+
+            div(class="subtitle-services").
+                Ми пропонуємо повний спектр монтажних послуг для побуту та промисловості
+                властивості за розумною ціною
+
+        div(class="cards-services container")
+            div(class="card")
+                img(src=require("../assets/card-img-1.png") alt="img-service")
+                div(class="card-title") Сервіс кондиціонерів
+
+                div(class="card-text").
+                    Сервіси здатні обслуговувати ваші
+                    всю електричну інфраструктуру
+                    від Тепловізор вашого повітря
+                    стан від розподільних щитів.
+
+                button(class="view-more") Зв'язатися з нами
+
+            div(class="card")
+                img(src=require("../assets/card-img-2.png") alt="img-service")
+                div(class="card-title") Сервіс кондиціонерів
+
+                div(class="card-text").
+                    Сервіси здатні обслуговувати ваші
+                    всю електричну інфраструктуру
+                    від Тепловізор вашого повітря
+                    стан від розподільних щитів.
+
+                button(class="view-more") Зв'язатися з нами
+
+
+            div(class="card")
+                img(src=require("../assets/card-img-3.png") alt="img-service")
+                div(class="card-title") Сервіс кондиціонерів
+
+                div(class="card-text").
+                    Сервіси здатні обслуговувати ваші
+                    всю електричну інфраструктуру
+                    від Тепловізор вашого повітря
+                    стан від розподільних щитів.
+
+                button(class="view-more") Зв'язатися з нами
+
+
+            div(class="card")
+                img(src=require("../assets/card-image-4.png") alt="img-service")
+                div(class="card-title") Сервіс кондиціонерів
+
+                div(class="card-text").
+                    Сервіси здатні обслуговувати ваші
+                    всю електричну інфраструктуру
+                    від Тепловізор вашого повітря
+                    стан від розподільних щитів.
+
+                button(class="view-more") Зв'язатися з нами
+
+            div(class="card")
+                img(src=require("../assets/card-image-5.png") alt="img-service")
+                div(class="card-title") Сервіс кондиціонерів
+
+                div(class="card-text").
+                    Сервіси здатні обслуговувати ваші
+                    всю електричну інфраструктуру
+                    від Тепловізор вашого повітря
+                    стан від розподільних щитів.
+
+                button(class="view-more") Зв'язатися з нами
+
+            div(class="card")
+                img(src=require("../assets/card-image-6.png") alt="img-service")
+                div(class="card-title") Сервіс кондиціонерів
+
+                div(class="card-text").
+                    Сервіси здатні обслуговувати ваші
+                    всю електричну інфраструктуру
+                    від Тепловізор вашого повітря
+                    стан від розподільних щитів.
+
+                button(class="view-more") Зв'язатися з нами
+
+    section.reasons
+        div(class="reasons-left-side")
+            img(src=require("../assets/reason-left-side.svg") alt="reasons why us")
+            div(class="reasons-portfolio")
+                div(class="paragraph")
+                    span(class="paragraph-left") 3956
+                    span(class="paragraph-right") Проектів Виконали
+
+                div(class="paragraph")
+                    span(class="paragraph-left") 3956
+                    span(class="paragraph-right") Працівників
+
+                div(class="paragraph")
+                    span(class="paragraph-left") 3956
+                    span(class="paragraph-right") Бізнес Партнерів
+
+                div(class="paragraph")
+                    span(class="paragraph-left") 3956
+                    span(class="paragraph-right") Щасливих Кліентів
+
+        div(class="reasons-right-side")
+            div(class="why-us")
+                img(src=require("../assets/why-us-img.png") alt="area")
+                span Чому обирають нас?
+
+            h1.title-service.
+                Кілька Причин, Чому Ви Повинні
+                Обрати Нас
+
+            div(class="reason-text").
+                Ми пропонуємо наступну інформацію про нас, що ми
+                насправді робити в електричному секторі. Щоб покращити життя наших клієнтів
+                надаючи креативні та економічно ефективні рішення для їхніх потреб
+
+            div(class="reason")
+                div(class="title-reason")
+                    img(src=require("../assets/check-img.png"))
+                    div(class="title") 15 років досвіду
+
+                span.
+                    Ми пропонуємо повний спектр електротехнічних послуг для житлових і комерційних об'єктів за
+                    розумною ціною.
+
+            div(class="reason")
+                div(class="title-reason")
+                    img(src=require("../assets/check-img.png"))
+                    div(class="title") Сертифікат відмінності
+
+                span Ми повністю розуміємо, що ваш час надзвичайно цінний. Ми прагнемо дотримуватись термінів.
+
+            div(class="reason")
+                div(class="title-reason")
+                    img(src=require("../assets/check-img.png"))
+                    div(class="title") Доступна ціна
+
+                span.
+                    Ми суворо дотримуємося чинного національного електротехнічного кодексу та проводимо регулярні
+                    внутрішні сесії.
+
+
+    section.projects
+        div(class="project-title")
+            img(src=require("../assets/gallery-img.png") alt="gallery")
+            span Галерея
+
+        h1.project-subtitle Наші останні проекти
+        div(class="project-gallery")
+            div(class="project-gallery-card")
+                img(src=require("../assets/gallery-img-1.png") alt="gallery-img")
+                div(class="card-title") Fiber cable change
+                div(class="card-subtitle") Commercial
+
+            div(class="project-gallery-card")
+                img(src=require("../assets/gallery-img-1.png") alt="gallery-img")
+                div(class="card-title") Fiber cable change#2
+                div(class="card-subtitle") Commercial
+
+
+            div(class="project-gallery-card")
+                img(src=require("../assets/gallery-img-1.png") alt="gallery-img")
+                div(class="card-title") Fiber cable change#3
+                div(class="card-subtitle") Commercial
+
+            div(class="project-gallery-card")
+                img(src=require("../assets/gallery-img-1.png") alt="gallery-img")
+                div(class="card-title") Fiber cable change#4
+                div(class="card-subtitle") Commercial
+
+            div(class="project-gallery-card")
+                img(src=require("../assets/gallery-img-1.png") alt="gallery-img")
+                div(class="card-title") Fiber cable change#5
+                div(class="card-subtitle") Commercial
+
+            div(class="project-gallery-card")
+                img(src=require("../assets/gallery-img-1.png") alt="gallery-img")
+                div(class="card-title") Fiber cable change#6
+                div(class="card-subtitle") Commercial
+
+            //- GALLERY SLIDER
+            div(class="gallery__slider")
+                span(class="gallery__slider-item id1")
+                span(class="gallery__slider-item id2")
+                span(class="gallery__slider-item id3")
+                span(class="gallery__slider-item id4")
+                span(class="gallery__slider-item id5")
+                span(class="gallery__slider-item id6")
+
+
+    section.contact-form.container
+
+        div(class="contact-form-left")
+            div(class="contact-form-title")
+                img(src=require("../assets/gallery-img.png") alt="gallery")
+                span Відгуки про нас
+
+            h1.customers-says Що говорять кліенти
+
+            div(class="rewievs")
+                div(class="people")
+                    img(src=require("../assets/rewievs.png") alt="people-photo")
+                    div(class="info")
+                        span(class="name") Nancy Luther
+                        span(class="city") New York
+
+                    img(class="quotes" src=require("../assets/quotes-img.png"))
+
+                div(class="divider")
+                span(class="text-slide").
+                    Ми мали кілька хороших досвідів роботи з Blue Collar<br>
+                    команда. Зовсім недавно вони змінили нашу 20-річку<br>
+                    Система HVAC з новою, сучасною та більш ефективною<br>
+                    система, і вона працювала нормально.<br>
+                    btn-поперед
+
+                div(class="change-slide")
+                    div(class="prev")
+                        img(src=require("../assets/prev-slide.png") alt="btn-prev")
+
+                    div(class="next")
+                        img(src=require("../assets/next-slide.png") alt="btn-next")
+
+            div(class="rewievs")
+                div(class="people")
+                    img(src=require("../assets/rewievs.png") alt="people-photo")
+                    div(class="info")
+                        span(class="name") Nancy Luther
+                        span(class="city") New York
+
+                    img(class="quotes" src=require("../assets/quotes-img.png"))
+
+                div(class="divider")
+                span(class="text-slide").
+                    Ми мали кілька хороших досвідів роботи з Blue Collar<br>
+                    команда. Зовсім недавно вони змінили нашу 20-річку<br>
+                    Система HVAC з новою, сучасною та більш ефективною<br>
+                    система, і вона працювала нормально.<br>
+                    btn-поперед
+
+                div(class="change-slide")
+                    div(class="prev")
+                        img(src=require("../assets/prev-slide.png") alt="btn-prev")
+
+                    div(class="next")
+                        img(src=require("../assets/next-slide.png") alt="btn-next")
+
+            div(class="rewievs")
+                div(class="people")
+                    img(src=require("../assets/rewievs.png") alt="people-photo")
+                    div(class="info")
+                        span(class="name") Nancy Luther
+                        span(class="city") New York
+
+                    img(class="quotes" src=require("../assets/quotes-img.png"))
+
+                div(class="divider")
+                span(class="text-slide").
+                    Ми мали кілька хороших досвідів роботи з Blue Collar<br>
+                    команда. Зовсім недавно вони змінили нашу 20-річку<br>
+                    Система HVAC з новою, сучасною та більш ефективною<br>
+                    система, і вона працювала нормально.<br>
+                    btn-поперед
+
+                div(class="change-slide")
+                    div(class="prev")
+                        img(src=require("../assets/prev-slide.png") alt="btn-prev")
+
+                    div(class="next")
+                        img(src=require("../assets/next-slide.png") alt="btn-next")
+
+            //- REVIEWS SLIDER
+            div(class="reviews__slider")
+                span(class="reviews__slider-item id1")
+                span(class="reviews__slider-item id2")
+                span(class="reviews__slider-item id3")
+
+            div(class="contact")
+                div(class="contact-title")
+                    img(src=require("../assets/gallery-img.png") alt="gallery")
+                    span Будь-яке питання
+
+                div(class="contact-subtitle") 99,9% задоволеності клієнтів
+
+                div(class="contact-text").
+                    Якщо у вас є запитання чи потрібна допомога, зв’яжіться з<br> нашою командою або зателефонуйте
+
+                a(href='tel:095 449 98 61')
+                    img(src=require("../assets/contact-img.png"))
+                    span +38 (095) 449 98 61
+
+        div(class="msg-for-user")
+
+        img(class="loader" src=require("../assets/loader-form.svg"))
+
+        div(class="contact-form-right")
+            div(class="project-title")
+                img(src=require("../assets/gallery-img.png") alt="gallery")
+                span Напишіть нам
+
+            h1.form-title Форма Зв'язку
+
+            form
+                input(autocomplete="off" name="name" placeholder="Ваше Ім'я" type="text")
+                input(autocomplete="off" name="email" placeholder="example@email.com" type="email")
+                input(autocomplete="off" type="tel" name="phone" placeholder="063 155 55 55")
+                textarea(name="what-want-client" placeholder="для приміток")
+                button(class="confirm-button" type="submit") Надіслати Дані
+
+
+//- add custom footer to default layout
+block custom-footer
+    .rectangle-top
+    div(class="main-footer__bottom-block")
+        div(class="main-footer__bottom-block--all")
+            div(class="main-footer__left-block")
+                h3(class="main-footer__text").
+                    Вироби із поліпропіленової плівки є екологічно чистими,
+                    сприяють охороні навколишнього середовища, а також вирізняються стійкістю до УФ
+                    випромінювання! Наші завантаження при стандартному виконанні витримують робочу
+                    температуру до 80 ° С без будь-яких деформацій!
+
+                div(class="main-footer__social")
+                    a(class="instagram" href="https://t.me/+380974499681" target="_blank"
+                        rel="noopener noreferrer")
+                        img(class="instagram-img" src=require("../assets/img_footer/telegram.png"))
+
+                    a(class="facebook" href="viber://chat?number=%2B380974499681" target="_blank"
+                        rel="noopener noreferrer")
+                        img(class="facebook-img" src=require("../assets/img_footer/viber.png") alt="facebook")
+
+                    a(class="twitter" href="https://wa.me/+380974499681" target="_blank"
+                        rel="noopener noreferrer")
+                        img(class="twitter-img" src=require("../assets/img_footer/whatsapp.png") alt="twitter")
+
+            wrapper(class="main-footer__shared-bloc")
+                wrapper(class="main-footer__links-bloc")
+                    div(class="main-footer__classification-links")
+                        h3 Mеню
+                        ul(class="main-footer__links")
+                            li(class="main-footer__link"): a(href="./index.html") Головна
+                            li(class="main-footer__link"): a(href="./aboutUs.html") Про нас
+                            li(class="main-footer__link"): a(href="./assortment.html") Категорії товару
+                            li(class="main-footer__link"): a(href="./contactsPage.html") Наші контакти
+
+
+                    div(class="main-footer__classification-links")
+                        h3 Категорії товару
+                        ul(class="main-footer__links")
+                            li(class="main-footer__link"): a(href="./industrWaterCooling.html") Промислове водяне охолодження
+                            li(class="main-footer__link"): a(href="./dSystems.html") Дренажні системи та Рибне господарство
+                            li(class="main-footer__link"): a(href="./waterPurification.html") Очищення та обробка води
+
+        div(class="rectangle-bottom")
+
+//- add to default layout at last position in body tag
+block body-bottom
+    .modal
+        .modal__dialog
+            .modal__content
+
+                form(action="input")
+                    .msg-for-user-modal
+                    img.loader-modal(src=require("../assets/loader-form.svg"))
+
+                    .modal__backdrop-message
+                        .modal__message
+                    .modal__backdrop-loader
+                    .modal__close(data-close="") &times;
+                    .modal__title МИ З ВАМИ ЗВ'ЯЖЕМОСЬ ЯКНАЙШВИДШЕ!
+                    input.modal__input--contacts(required placeholder="Ваше ім'я" name="name-modal" type="text")
+                    input.modal__input--contacts(required placeholder="example@email.com" name="email-modal" type="text")
+                    input.modal__input--phones(required placeholder="+38 (063) 111 22 33" name="phone-modal" type="phone")
+
+                    button.modal__btn Надіслати
+
+                .container
+                    .row
+                        .promotion__timer
+                            .title ПОСПІШАЙ!!! До кінця акції залишилось:
+                            .timer
+                                .timer__block: span#d.badge-succces.var1 днів
+                                .timer__block: span#h.badge-succces.var2 годин
+                                .timer__block: span#m.badge-succces.var3 хвилин
+                                .timer__block: span#s.badge-succces.var4 секунд

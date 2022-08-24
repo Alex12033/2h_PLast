@@ -1,0 +1,14 @@
+extends Views/layout/default
+
+//- define variables used in default layout
+block variables
+  - var mainTitle = 'Очищення та обробка води'
+  - var title = 'ОЧИЩЕННЯ ТА ОБРОБКА ВОДИ'
+
+//- add page styles
+append style
+    link(href=require('Styles/categories/categories-page.scss') rel='stylesheet')
+
+//- add page scripts
+append script
+    script(src=require('Scripts/main-water-purification-and-treatment.js') defer)

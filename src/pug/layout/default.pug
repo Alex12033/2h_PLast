@@ -1,0 +1,142 @@
+//- External variables
+block variables
+  - var isHomepage = false
+  - var mainTitle = ''
+  - var title = ''
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= mainTitle
+
+        //- append here custom page styles
+        block style
+
+    body
+        .scroll-to-top
+            //- img(src=require("../assets/arrow_up.svg") alt="arrow-up")
+
+        header
+            .mobile-nav__backdrop
+                nav.mobile-nav
+                    .mobile-nav__wrapper
+                        .mobile-nav__close
+                            svg(viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg')
+                                line(x1='0' x2='100' y1='0' y2='100')
+                                line(x1='0' x2='100' y1='100' y2='0')
+                        ul.mobile-nav__items
+                            li.mobile-nav__item
+                                a(href='index.html') Головна
+                            li.mobile-nav__item
+                                a(href='./assortment.html') Категорії товару
+                            li.mobile-nav__item
+                                a(href='./contactsPage.html') Наші контакти
+                        //- .mobile-nav__questions
+                        //-   .main-nav__questions-item
+                        //-     a(href='#') Виникли запитання?
+            .hours-background
+                .hours-social.container
+                    span.hours Час роботи: з 9.30 до 18.00
+                    .social
+                        a(href='https://t.me/+380974499681')
+                            img.facebook(src=require('Images/icon2telegram.png') alt='facebook')
+                        a(href='viber://chat?number=%2B380974499681')
+                            img.instagram(src=require('Images/icon2viber.png') alt='twitter')
+                        a(href='https://wa.me/+380974499681')
+                            img.pinterest(src=require('Images/icon2-whatsapp.png') alt='pinterest')
+            .email-logo.container
+                a(href='./index.html')
+                    img.logo(src=require("Images/logo.png") alt='logo')
+                .info
+                    .mail
+                        img.mail-logo(src=require("Images/mail.png") alt='logo')
+                        div
+                            .mail-title Емаїл
+                            .mail-adress 2hplast@gmail.com
+                    a.phone(href='tel:+38 (097) 449 98 61')
+                        img.phone-logo(src=require("Images/phone.png") alt='logo')
+                        div
+                            .phone-title Наші Телефони
+                            .phone-number +38 (097) 449 98 61
+                            .phone-number +38 (095) 449 98 61
+            .navigation-bar.container
+                ul
+                    li
+                        a(href='./index.html') Головна
+                    li.about-us
+                        a#about-us(href='./aboutUs.html') Про Нас
+                    li
+                        a(href='./assortment.html') Категорії Товару
+                    li
+                        a(href='./contactsPage.html') Наші Контакти
+                if isHomepage
+                    button.question-btn Виникли запитання ?
+
+            if isHomepage
+                //- show on index page only
+                .header-body
+                    //- BURGER-MENU-BTN
+                    button.toggle-button
+                        span.toggle-button__bar
+                        span.toggle-button__bar
+                        span.toggle-button__bar
+                    .container
+                        .tagline
+                            img(src=require("Images/gear.svg") alt="gear")
+                            span Поліпшуємо життя наших клієнтів, приймаючи ефективні рішення
+
+                        h1.title-header Визнаний лідер сфери <br> послуг
+                        button(class="services-btn") Дивитися Послуги
+            else
+                //- show on all subpages
+                .assortment__all
+                    .assortment__all--btn-burger
+                        //- BURGER-MENU-BTN
+                        button.toggle-button
+                            span.toggle-button__bar
+                            span.toggle-button__bar
+                            span.toggle-button__bar
+                    h2= title
+
+        //- main content
+        block content
+
+        footer.main-footer
+            .container
+                .main-footer__all-info
+                    .main-footer__top-block
+                        .info-all
+                            img.logo(src=require("Images/img_footer/logowhite.png") alt='logo')
+                            .info
+                                .mail
+                                    a(href='mailto:2hplast@gmail.com')
+                                        img.mail-logo(src=require("Images/mail.png") alt='logo')
+                                    .mail-info
+                                        .mail-title Email:
+                                        .mail-adress 2hplast@gmail.com
+                                .phone
+                                    a(href='tel:+380974499681')
+                                        img.phone-logo(src=require("Images/phone.png") alt='logo')
+                                    .phone-info
+                                        .phone-title Наші Телефони:
+                                        .phone-number +38 (097) 449 98 61
+                                        .phone-number +38 (095) 449 98 61
+                                .location
+                                    a(href='https://goo.gl/maps/joJ9TARrQzcCScvX6')
+                                        img.location-logo(src=require("Images/img_footer/locationf.png") alt='logo')
+                                    .location-info
+                                        .location-title Знаходимось тут:
+                                        .location-adress м. Самбір
+                                        .location-street вул. Ярослава Мудрого, 18
+
+                    //- additional custom footer
+                    block custom-footer
+
+        //- before body close
+        block body-bottom
+
+        //- append here custom page scripts
+        block script

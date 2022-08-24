@@ -1,0 +1,74 @@
+extends Views/layout/default
+
+include Views/mixins/_cards-descr
+
+//- define variables used in default layout
+block variables
+  - var mainTitle = 'Жалюзі впуску повітря 2H LEP 065'
+  - var title = 'ЖАЛЮЗІ ВПУСКУ ПОВІТРЯ 2H LEP 065'
+
+//- add page styles
+append style
+    link(href=require('Styles/categories/cards-descr.scss') rel='stylesheet')
+
+//- add page scripts
+append script
+    script(src=require('Components/categories/cards-descr.js') defer)
+
+block content
+    - var image = require('Images/img_categories/industrial-water-cooling/6.png')
+
+    +description(image, 'Поліпропіленове завантаження 2H LEР 065 – жалюзі зі спаяної поліпропіленової плівки покращують потік повітря в градирню. Вони не тільки стримують не бажані елементи (листя і т. д.),  а й запобігають розбризкуванню води')
+        ul
+            p Властивості:
+            li забезпечують відповідний кут впуску повітря в градирню;
+            li запобігають витіканню води із градирні;
+            li запобігають потраплянню листя в градирню;
+            li обмежують доступ сонячного світла до градирні, що запобігає росту водоростей;
+            li низький перепад тиску;
+            li довготривалий термін експлуатації;
+            li стійкі до хімічного впливу та УФ променів.
+        table.table
+                tbody
+                tr
+                    td.title(colspan="2") Технічні дані 2H LEP 065
+                tr
+                    td
+                tr
+                    td.orange Матеріал
+                    td.violet поліпропилен (PP)
+                tr
+                    td.violet Градирня
+                    td.orange Перехресний і зустрічний
+                               br
+                               | потік повітря в градирню
+                tr
+                    td.orange Кондиціонування повітря
+                    td.violet Повітрозбірник
+                tr
+                    td.violet Максимальна робоча
+                                br
+                                | температура
+                    td.orange +80 °С
+                tr
+                    td.orange Доступні розміри:
+                                br
+                                |Довжина
+                                br
+                                |Ширина
+                                br
+                                |Висота
+                    td.violet
+                                br
+                                | 2400 мм
+                                br
+                                | 610 мм
+                                br
+                                | 63 мм
+                tr
+                    td.violet Додаткові властивості
+                    td.orange 2H LEP 065
+                                br
+                                | з додатковими стабілізуючими
+                                br
+                                | ребрами жорсткості

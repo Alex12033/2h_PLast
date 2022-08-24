@@ -1,17 +1,9 @@
-require("../scss/index.scss");
-require("../scss/header.scss");
-require("../scss/experience.scss");
-require("../scss/main-services.scss");
-require("../scss/our-services.scss");
-require("../scss/footer.scss");
-require("../scss/reasons.scss");
-require("../scss/projects.scss");
-require("../scss/contact-form.scss");
+// Note: import styles directly in Pug or in SCSS
 
 function tabs() {
   let tabs = document.querySelector(".tabs-variants"); //btns for change tab
 
-  //we gets tabs id for what hide one of them when we click on another tab
+  // get tabs id for what hide one of them when we click on another tab
   let comercialTab = document.querySelector("#comercial");
   let residentialTab = document.querySelector("#residential");
   let industrialTab = document.querySelector("#industrial");

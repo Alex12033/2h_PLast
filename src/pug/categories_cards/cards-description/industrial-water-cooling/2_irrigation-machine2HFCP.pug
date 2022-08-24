@@ -1,0 +1,71 @@
+extends Views/layout/default
+
+include Views/mixins/_cards-descr
+
+//- define variables used in default layout
+block variables
+  - var mainTitle = 'Зрошувач 2H FСP'
+  - var title = 'ЗРОШУВАЧ 2H FСP'
+
+//- add page styles
+append style
+    link(href=require('Styles/categories/cards-descr.scss') rel='stylesheet')
+
+//- add page scripts
+append script
+    script(src=require('Components/categories/cards-descr.js') defer)
+
+block content
+    - var image = require('Images/img_categories/industrial-water-cooling/2.png')
+
+    +description(image, 'Поліпропіленовий (РР) зрошувач 2H FCP-619 з прямоканальними водостоками знижує температуру технологічної води в градирнях баштового типу')
+        ul
+            p Властивості:
+            li стійкий до високих температур;
+            li висока механічна міцність;
+            li висока стійкість до хімічних впливів та УФ променів;
+            li легко піддається очистці.
+        p
+            br
+            | Зрошувач 2H FKP забезпечує найвищу ефективність системи охолодження технологічної води у випарних градирнях із гравітаційною та вентиляційною циркуляцією.
+        table.table
+            tbody
+            tr
+                td.title(colspan="2") Технічні дані 2H FCP-619
+            tr
+                td
+            tr
+                td.orange Матеріал
+                td.violet поліпропилен (PP)
+            tr
+                td.violet Поверхня заміни
+                td.orange 150 м2/м3
+            tr
+                td.orange Висота профілю
+                td.violet 19 мм
+            tr
+                td.violet Щільність, г/см3
+                td.orange 1,05
+            tr
+                td.orange Доступні розміри:
+                            br
+                            |Довжина
+                            br
+                            |Ширина
+                            br
+                            |Висота
+                td.violet
+                            br
+                            |2400 мм
+                            br
+                            |300 / 600 мм
+                            br
+                            |300 / 600 мм
+            tr
+                td.violet Діапазон температур:
+                td.orange від -15 °С до +80 °С
+        p
+            br
+            | Забезпечує високу ефективність систем охолодження технологічної води у випарних градирнях із гравітаційною та вентиляторною циркуляцією.
+            br
+            | Застосовується також у: газових очисних установках, в установках дегазації глибинних вод, в установках зволоження повітря, в установках для підготовки і очищення технологічної і питної води.

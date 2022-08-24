@@ -1,3 +1,9 @@
+@use 'Styles/index';
+@use 'Styles/header';
+@use 'Styles/burger-menu';
+@use 'Styles/footer';
+@use 'Styles/categories-cards-pages';
+
 @mixin media-max-width($width) {
   @media (max-width: $width) {
     @content;

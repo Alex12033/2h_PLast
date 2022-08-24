@@ -1,0 +1,14 @@
+extends Views/layout/default
+
+//- define variables used in default layout
+block variables
+  - var mainTitle = 'Промислове водяне охолодження'
+  - var title = 'ПРОМИСЛОВЕ ВОДЯНЕ ОХОЛОДЖЕННЯ'
+
+//- add page styles
+append style
+    link(href=require('Styles/categories/categories-page.scss') rel='stylesheet')
+
+//- add page scripts
+append script
+    script(src=require('Scripts/main-industrial-water-cooling.js') defer)

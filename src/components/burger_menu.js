@@ -1,4 +1,4 @@
-require('../scss/burger-menu.scss');
+// Note: import styles directly in Pug or in SCSS
 
 function burgerMenu() {
   const burgerBtn = document.querySelector('.toggle-button');

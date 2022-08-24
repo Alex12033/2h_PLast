@@ -1,0 +1,30 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Assortment
+
+        link(href=require('Styles/assortment.scss') rel='stylesheet')
+    body
+        div(class="assortment__wrapper")
+            div(class="assortment__item var1")
+                div(class="assortment__item-title") Промислове водяне охолодження
+                div(id="btn_1" class="assortment__item--btn-more")
+                    a(href="industrWaterCooling.html") Дивись далі
+                        img#arrow_1.arrow(src=require("Images/img_categories/img/arrow.svg") alt="arr")
+
+            div(class="assortment__item var2")
+                div(class="assortment__item-title") Дренажні системи <br>та <br>Рибне господарство
+                div(id="btn_2" class="assortment__item--btn-more")
+                    a(href="dSystems.html") Дивись далі
+                        img#arrow_2.arrow(src=require("Images/img_categories/img/arrow.svg") alt="arr")
+
+            div(class="assortment__item var3")
+                div(class="assortment__item-title") Очищення та обробка води
+                div(id="btn_3" class="assortment__item--btn-more")
+                    a(href="waterPurification.html") Дивись далі
+                        img#arrow_3.arrow(src=require("Images/img_categories/img/arrow.svg") alt="arr")
+
+        //- add script at last position
+        script(src=require('Scripts/assortment.js') defer)

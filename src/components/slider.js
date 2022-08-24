@@ -1,9 +1,9 @@
-require('../scss/contact-form.scss');
+// Note: import styles directly in Pug or in SCSS
 
-let next = document.querySelectorAll(".next");
-let prev = document.querySelectorAll(".prev");
+let next = document.querySelectorAll('.next');
+let prev = document.querySelectorAll('.prev');
 
-let dotsSlider = document.querySelectorAll(".reviews__slider");
+let dotsSlider = document.querySelectorAll('.reviews__slider');
 
 function reviewsSlider() {
   let slideIndex = 1;
@@ -11,27 +11,26 @@ function reviewsSlider() {
 
   next.forEach((n) => {
     n.addEventListener('click', () => {
-        showSlides((slideIndex += 1));
-  }) 
+      showSlides((slideIndex += 1));
+    });
   });
 
   prev.forEach((p) => {
-    p  .addEventListener('click', () => {
-        showSlides((slideIndex -= 1));
-  })
+    p.addEventListener('click', () => {
+      showSlides((slideIndex -= 1));
+    });
   });
 
   dotsSlider.forEach(dot => {
     dot.addEventListener('click', (event) => {
       showSlides((slideIndex = event.target.id));
     });
-  })
-
+  });
 
   function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("rewievs");
-    let dots = document.getElementsByClassName("reviews__slider-item");
+    let slides = document.getElementsByClassName('rewievs');
+    let dots = document.getElementsByClassName('reviews__slider-item');
     if (n > slides.length) {
       slideIndex = 1;
     }
@@ -39,21 +38,21 @@ function reviewsSlider() {
       slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].style.display = 'none';
     }
     for (i = 0; i < dots.length; i++) {
-    slides[slideIndex - 1].style.display = "block";
+      slides[slideIndex - 1].style.display = 'block';
     }
   }
 
   //                  Mobile SWIPE
-  const parag = document.querySelectorAll(".rewievs");
+  const parag = document.querySelectorAll('.rewievs');
 
   parag.forEach((n) => {
-    n.addEventListener("touchstart", handleTouchStart, false);
+    n.addEventListener('touchstart', handleTouchStart, false);
   });
   parag.forEach((n) => {
-    n.addEventListener("touchmove", handleTouchMove, false);
+    n.addEventListener('touchmove', handleTouchMove, false);
   });
 
   let x1 = null;

@@ -1,4 +1,4 @@
-require("../../scss/modal/modal.scss");
+// Note: import styles directly in Pug or in SCSS
 
 function modal() {
   // Modal

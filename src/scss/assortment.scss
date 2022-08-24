@@ -1,3 +1,5 @@
+@use "Styles/main";
+
 $colors: (
   main: #ffb342,
   secondary: #1c2752,
@@ -48,15 +50,15 @@ $colors: (
 }
 
 .var1 {
-  background: center / cover no-repeat url('../../src/assets/img_categories/img/backgr_1.jpg');
+  background: center / cover no-repeat url('Images/img_categories/img/backgr_1.jpg');
 }
 
 .var2 {
-  background: center / cover no-repeat url('../../src/assets/img_categories/img/backgr_2.jpg');
+  background: center / cover no-repeat url('Images/img_categories/img/backgr_2.jpg');
 }
 
 .var3 {
-  background: center / cover no-repeat url('../../src/assets/img_categories/img/backgr_3.jpg');
+  background: center / cover no-repeat url('Images/img_categories/img/backgr_3.jpg');
 }
 
 .assortment__item--btn-more {

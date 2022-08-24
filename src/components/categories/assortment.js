@@ -1,5 +1,3 @@
-require('../../scss/assortment.scss');
-require('../../scss/index.scss');
 function arrow() {
   const btn1 = document.getElementById('btn_1');
   const btn2 = document.getElementById('btn_2');

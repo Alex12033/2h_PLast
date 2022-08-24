@@ -1,0 +1,63 @@
+extends Views/layout/default
+
+//- define variables used in default layout
+block variables
+  - var mainTitle = '2H_Plast'
+  - var title = 'НАШІ КОНТАКТИ'
+
+//- add page styles
+append style
+  link(href=require('Styles/contatcs-page/our-contacts.scss') rel='stylesheet')
+
+//- add page scripts
+append script
+  script(src=require('Scripts/our-contacts-page.js') defer)
+
+block content
+  section.contacts-all
+    .contact-container.container
+      .wrapper-contact
+        .contact-form-left
+          .project-title__left
+            img(src=require('Images/gallery-img.png') alt='gallery')
+            span Наші контакти
+          span.form-title__left
+            | Конткати приватного підприємства
+            | «ПЛАСТ УКРАЇНА»
+          .all
+            .phone-all
+              a(href='tel:+380974499681, +380954499681')
+                .phone-contact
+                  img.phone-logo(src='https://cdn.iconfinder.com/stored_data/564175/128/png?token=1661322026-LkX0IH5qfSFjhImtsh%2BlU7YV%2B6aNhjMSujW4bLlVrXw%3D' alt='logo')
+              .text-phone
+                .our-phone Наші Телефони:
+                .our-phone__number +38 (097) 449 98 61
+                .our-phone__number +38 (095) 449 96 81
+            .center
+              .explainer
+                span Дізнатись контакти
+              .text Графік роботи:
+              .text-two ПН – ПТ: 09:00 – 17:00
+              .text-three СБ – НД: вихідний
+            .time-all
+              a(href='mailto:2hplast@gmail.com')
+                .time-contact
+                  img.time-logo(src='https://cdn.iconfinder.com/stored_data/561016/128/png?token=1661180854-8spmaMC05TVkYACXL%2BX0860Gr%2BZ3fmTcfEOEJwkL6O4%3D' alt='logo')
+              .text-time
+                .our-time E-mail:
+                .our-time__number 2hplast@gmail.com
+        .contact-form-right
+          .project-title
+            img(src=require('Images/gallery-img.png') alt='gallery')
+            span Зв'язатися з нами
+          span.form-title
+            | Будь-ласка заповніть форму
+          form
+            input(autocomplete='off' name='name' placeholder="Ваше Ім'я" type='text')
+            input(autocomplete='off' name='email' placeholder='example@email.com' type='email')
+            input(autocomplete='off' type='tel' name='phone' placeholder='063 155 55 55')
+            textarea(name='what-want-client' placeholder='special for you')
+            button.confirm-button(type='submit') SIGN UP
+    .contact-from-bottom.container
+      .map-responsive
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82889.35380128023!2d23.132737969837276!3d49.516757011000095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ba50e07acbb07%3A0x97bf28c36f34590a!2zMkgt0J_Qm9CQ0KHQoiDQo9Ca0KDQkNCH0J3QkCDQhtCd0J7Ql9CV0JzQndCVINCf0IbQlNCf0KDQmNCE0JzQodCi0JLQng!5e0!3m2!1sru!2sua!4v1660989345270!5m2!1sru!2sua' width='100%' height='450px' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')

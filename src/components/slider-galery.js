@@ -1,4 +1,4 @@
-require('../scss/projects.scss');
+// Note: import styles directly in Pug or in SCSS
 
 let dotsSlider = document.querySelectorAll('.gallery__slider');
 

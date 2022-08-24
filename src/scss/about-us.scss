@@ -1,3 +1,9 @@
+@use "Styles/main";
+@use "Styles/header";
+@use "Styles/footer";
+@use "Styles/burger-menu";
+@use "Styles/categories-cards-pages";
+
 .about__us-all {
     margin-top: -10px;
     background: #f2f2f2;
@@ -24,11 +30,11 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             margin: 20px;
             transition: 0.3s ease-in;
-          
+
             &:hover {
               transform: translateY(-10px);
             }
-    
+
             h2 {
                 background: rgba(0,0,0,0.5);
                 width: 70%;
@@ -39,7 +45,7 @@
                 padding: 20px 0;
                 color: #ffb342;
             }
-    
+
             p {
                 background: rgba(0,0,0,0.5);
                 width: 70%;
@@ -53,4 +59,3 @@
         }
     }
 }
-

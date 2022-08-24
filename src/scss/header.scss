@@ -33,7 +33,7 @@
           transform: rotateZ(360deg);
         }
       }
-      
+
 
       @include media-max-width(1200px) {
         width: 25%;
@@ -54,7 +54,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+
+  &.container {
+    margin-top: 10px;
+  }
 
   a {
     color: #222222;
@@ -264,7 +267,7 @@
       background: #f4f4f4;
     }
 
-    &:active { 
+    &:active {
       transform: translateY(-10px);
     }
   }

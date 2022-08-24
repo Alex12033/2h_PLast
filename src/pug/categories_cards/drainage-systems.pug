@@ -1,0 +1,14 @@
+extends Views/layout/default
+
+//- define variables used in default layout
+block variables
+  - var mainTitle = 'Дренажні системи та рибне господарство'
+  - var title = 'ДРЕНАЖНІ СИСТЕМИ ТА РИБНЕ ГОСПОДАРСТВО'
+
+//- add page styles
+append style
+    link(href=require('Styles/categories/categories-page.scss') rel='stylesheet')
+
+//- add page scripts
+append script
+    script(src=require('Scripts/drainage-system.js') defer)
