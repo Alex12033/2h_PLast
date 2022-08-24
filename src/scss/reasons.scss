@@ -10,53 +10,25 @@
   justify-content: space-between;
 
   @include media-max-width(1300px) {
-    background: url("../assets/reason-left-side.svg");
+    background: url("../assets/reason-left-side.jpg");
     background-position: center center;
     background-size: cover;
   }
 
   .reasons-left-side {
-    position: relative;
+    background-image: url("../assets/reason-left-side.jpg");
+    background-position: 50%;
+    background-size: cover;
+    width: 50%;
+    padding-bottom: 54%;
 
     @include media-max-width(1300px) {
       img {
         display: none;
       }
-    }
 
-    .reasons-portfolio {
-      background: rgba(#1c2752, 0.8);
-      position: absolute;
-      left: calc(100%-80%);
-      top: 20%;
-      width: 60%;
-      padding: 60px 80px;
-
-      @include media-max-width(1300px) {
-       display: none;
-
-      }
-
-      .paragraph {
-        display: flex;
-        align-items: center;
-
-        width: 100%;
-        border: solid #ffff 1px;
-        margin-bottom: 30px;
-
-        .paragraph-left {
-          padding: 10px 10px;
-          background: #ffb342;
-          color: black;
-          font-weight: bolder;
-        }
-
-        .paragraph-right {
-          padding: 10px 10px;
-          color: white;
-        }
-      }
+      width: 0%;
+      padding-bottom: 0%;
     }
   }
 
@@ -73,7 +45,7 @@
       padding: 5px 5px;
       color: white;
       align-items: center;
-      background: rgba(#000000, 0.5);
+      background: rgba(#000000, 0.8);
     }
 
     .why-us {

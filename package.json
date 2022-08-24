@@ -4,7 +4,7 @@
   "description": "site for seller company",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack --mode development",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --mode production --open"
   },
   "author": "",

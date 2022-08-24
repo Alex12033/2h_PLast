@@ -33,7 +33,7 @@ $colors: (
     }
     @include media-max-width(725px) {
       display: flex;
-      flex-direction: wrap;
+      flex-wrap: wrap;
     }
   }
 
@@ -68,7 +68,7 @@ $colors: (
   .info-all {
     display: flex;
     justify-content: space-around;
-    flex-direction: wrap;
+    flex-wrap: wrap;
     @include media-max-width(1010px) {
       display: flex;
       flex-direction: row;
@@ -371,7 +371,7 @@ $colors: (
       font-size: 18px;
       font-style: normal;
       font-weight: 300;
-      letter-spacing: 10%;
+      letter-spacing: 1px;
       margin-bottom: 20px;
 
       @include media-max-width(1000px) {
@@ -506,14 +506,14 @@ $colors: (
 
       @include media-max-width(1000px) {
         display: flex;
-        flex-direction: wrap;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
       }
       @include media-max-width(690px) {
         display: flex;
         align-items: flex-start;
-        flex-direction: wrap;
+        flex-wrap: wrap;
       }
       @include media-max-width(545px) {
         display: flex;
@@ -546,7 +546,7 @@ $colors: (
       margin: 0 auto;
       font-weight: 600;
       font-size: 1.5rem;
-      color: #ffb342;
+      color: #249cd6;
       text-align: left;
       transition: 0.5s;
 
@@ -554,7 +554,6 @@ $colors: (
         display: flex;
         flex-direction: column;
         margin: 0px 0px 0px 0px;
-
       }
 
       &:hover,
@@ -575,7 +574,7 @@ $colors: (
       &:hover,
       &:active {
         transform: scale(1.2);
-        color: #ffb342;
+        color: #249cd6;
       }
     }
 
@@ -588,7 +587,7 @@ $colors: (
 
       &:hover,
       &:active {
-        color: #ffb342;
+        color: #00a0e3;
       }
       @include media-max-width(1024px) {
         cursor: none;

@@ -4,8 +4,9 @@ function autoScroll() {
   let scrollBtn = document.querySelector(".scroll-to-top");
 
   let aboutUsLink = document.querySelector("#about-us");
+
   let contacts = document.querySelector(".contact-form");
-  
+
   let seeServicesBtn = document.querySelector(".services-btn");
   let services = document.querySelector(".our-services");
 
@@ -13,9 +14,7 @@ function autoScroll() {
 
   let tabBtn = document.querySelectorAll(".tab-button");
 
-
-  
-  console.log(contacts);
+  let questionBtn = document.querySelector(".question-btn");
 
   window.addEventListener("scroll", () => {
     if (window.pageYOffset > "1000") {
@@ -25,37 +24,39 @@ function autoScroll() {
     }
   });
 
-  scrollBtn.addEventListener("click", () => {
+  scrollBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     window.scrollTo({ top: 1, behavior: "smooth" });
   });
 
   aboutUsLink.addEventListener("click", (e) => {
     e.preventDefault();
-
     contacts.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 
   seeServicesBtn.addEventListener("click", (e) => {
     e.preventDefault();
-
     services.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 
-  viewMoreBtn.forEach(btn => {
+  viewMoreBtn.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-  
       contacts.scrollIntoView({ behavior: "smooth", block: "center" });
     });
-  })
+  });
 
-  tabBtn.forEach(btn => {
+  tabBtn.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-  
       contacts.scrollIntoView({ behavior: "smooth", block: "center" });
     });
-  })
+  });
+
+  questionBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    contacts.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
 }
 
 module.exports = autoScroll;

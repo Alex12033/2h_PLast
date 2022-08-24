@@ -27,21 +27,6 @@ function tabs() {
 
   tabs.addEventListener("click", (event) => {
     console.log(event.target.className);
-    if (
-      event.target.id === "comercial__tab-identify" ||
-      event.target.className === "comercial-image-btn" ||
-      event.target.className === "comercial-text-btn"
-    ) {
-      comercialBtn.classList.add("extractor-tabs");
-
-      removeExtractor(".residential");
-      removeExtractor(".industrial");
-
-      industrialTab.style.display = "none";
-      residentialTab.style.display = "none";
-
-      comercialTab.style.display = "flex";
-    }
 
     if (
       event.target.id === "residential__tab-identify" ||
@@ -50,11 +35,9 @@ function tabs() {
     ) {
       residentialBtn.classList.add("extractor-tabs");
 
-      removeExtractor(".comercial");
       removeExtractor(".industrial");
 
       industrialTab.style.display = "none";
-      comercialTab.style.display = "none";
 
       residentialTab.style.display = "flex";
     }
@@ -66,10 +49,8 @@ function tabs() {
     ) {
       industrialBtn.classList.add("extractor-tabs");
 
-      removeExtractor(".comercial");
       removeExtractor(".residential");
 
-      comercialTab.style.display = "none";
       residentialTab.style.display = "none";
 
       industrialTab.style.display = "flex";
