@@ -1,11 +1,22 @@
 require('../scss/projects.scss');
 
+let next = document.querySelector(".next-gallery");
+let prev = document.querySelector(".prev-gallery");
+
 let dotsSlider = document.querySelectorAll('.gallery__slider');
 
 const parag = document.querySelectorAll('.project-gallery-card');
 
 function projectSlider() {
   let slideIndex = 1;
+
+  next.addEventListener('click', () => {
+    showSlides(slideIndex += 1);
+  });
+
+  prev.addEventListener('click', () => {
+    showSlides(slideIndex -= 1);
+  });
 
   function mobileSwipe() {
     parag.forEach((n) => {
