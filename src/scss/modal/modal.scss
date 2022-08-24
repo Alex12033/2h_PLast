@@ -94,10 +94,10 @@
     position: relative;
     padding: 30px 0px 30px 0px;
     background-color: #1c2752;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    // border: 1px solid rgba(0, 0, 0, 0.2);
+    // border-radius: 8px;
     max-height: 80vh;
-    opacity: 0.96;
+    // opacity: 0.96;
     overflow-y: auto;
   }
   .modal__close {
@@ -129,15 +129,15 @@
     width: 60%;
     height: 50px;
     background: #fff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    // box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
-    border: none;
+    // border: none;
     font-size: 18px;
     align-items: center;
     text-align: center;
     padding: 0 20px;
     outline: 0;
-    opacity: 0.9;
+    // opacity: 0.9;
     overflow: hidden;
   }
 
@@ -147,14 +147,14 @@
     width: 60%;
     height: 50px;
     background: #fff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    // box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
-    border: none;
+    // border: none;
     font-size: 18px;
     text-align: center;
     padding: 0 20px;
     outline: 0;
-    opacity: 0.9;
+    // opacity: 0.9;
   }
 
   .modal__btn {
