@@ -63,6 +63,7 @@
     outline: none;
     text-decoration: none;
     transition: 0.3s ease-in-out;
+    width: 215px;
 
     &:visited {
       color: #222222;
@@ -135,7 +136,7 @@
       align-items: center;
       justify-content: space-between;
 
-      @include media-max-width(1450px) {
+      @include media-max-width(1000px) {
         margin-bottom: 10px;
       }
 
@@ -156,7 +157,7 @@
         height: 60px;
         border-radius: 20px;
         background: #38b4e9;
-        padding: 20px;
+        padding: 20px 17px 20px 18px;
 
         &:hover {
           transform: rotateX(360deg);
@@ -352,6 +353,16 @@
       line-height: 78px;
       letter-spacing: 1.2px;
       margin-top: 30px;
+
+      @include media-max-width(550px) {
+        font-size: 50px;
+        line-height: 68px;
+      }
+
+      @include media-max-width(450px) {
+        font-size: 45px;
+        line-height: 60px;
+      }
     }
 
     .services-btn {
