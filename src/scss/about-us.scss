@@ -1,56 +1,84 @@
 .about__us-all {
-    margin-top: -10px;
-    background: #f2f2f2;
+  margin-top: -10px;
+  padding: 20px;
+  background: #f2f2f2;
 
-    .about__us-items {
+  .about__us-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+
+    .about__us-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 30%;
+      min-width: 300px;
+      height: 450px;
+      margin: 20px;
+      transition: 0.3s ease-in;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.49);
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      h2 {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 90%;
-        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 75px;
+        min-width: 270px;
+        font-size: 24px;
+        font-weight: 900;
+        margin: 0;
+        padding: 10px 0;
+        color: #6ed4ff;
+        // background: rgba(180, 180, 180, 0.4);
+      }
 
-        .about__us-item {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            // background: white;
-            background: center / cover no-repeat url('../../src/assets/img_categories/img/backgr_1.jpg');
-
-            width: 30%;
-            min-width: 300px;
-            height: 450px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            margin: 20px;
-            transition: 0.3s ease-in;
-          
-            &:hover {
-              transform: translateY(-10px);
-            }
-    
-            h2 {
-                background: rgba(0,0,0,0.5);
-                width: 70%;
-                min-width: 270px;
-                font-size: 24px;
-                font-weight: bold;
-                margin: 0;
-                padding: 20px 0;
-                color: #ffb342;
-            }
-    
-            p {
-                background: rgba(0,0,0,0.5);
-                width: 70%;
-                min-width: 270px;
-                margin: 0;
-                padding: 20px 0;
-                font-size: 18px;
-                font-weight: bold;
-                color: white;
-            }
-        }
+      p {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        min-width: 270px;
+        height: 300px;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+      }
     }
+  }
 }
 
+.var1 {
+  background: center / cover no-repeat
+    url('../../src/assets/about_us/material.jpg');
+}
+.var2 {
+  background: center / cover no-repeat
+    url('../../src/assets/about_us/strength.jpg');
+}
+.var3 {
+  background: center / cover no-repeat
+    url('../../src/assets/about_us/cooling-tower.jpg');
+}
+.var4 {
+  background: center / cover no-repeat
+    url('../../src/assets/about_us/temperature.jpg');
+}
+.var5 {
+  background: center / cover no-repeat
+    url('../../src/assets/about_us/environmental-friendliness.jpg');
+}
+.var6 {
+  background: center / cover no-repeat
+    url('../../src/assets/about_us/security.jpg');
+}
