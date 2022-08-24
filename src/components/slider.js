@@ -49,11 +49,11 @@ function reviewsSlider() {
   //                  Mobile SWIPE
   const parag = document.querySelectorAll(".rewievs");
 
-  parag.forEach(() => {
-    addEventListener("touchstart", handleTouchStart, false);
+  parag.forEach((n) => {
+    n.addEventListener("touchstart", handleTouchStart, false);
   });
-  parag.forEach(() => {
-    addEventListener("touchmove", handleTouchMove, false);
+  parag.forEach((n) => {
+    n.addEventListener("touchmove", handleTouchMove, false);
   });
 
   let x1 = null;
@@ -77,9 +77,9 @@ function reviewsSlider() {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
-        showSlides((slideIndex += 1));
-      } else {
         showSlides((slideIndex -= 1));
+      } else {
+        showSlides((slideIndex += 1));
       }
     }
     x1 = null;

@@ -154,9 +154,13 @@ $colors: (
 }
 
 .mobile-nav__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25%;
   list-style: none;
-  text-align: center;
   padding: 0;
+  text-align: center;
 
   .mobile-nav__item {
     padding: 8px;
@@ -164,7 +168,7 @@ $colors: (
       text-decoration: none;
       color: white;
       font-weight: bold;
-      font-size: 24px;
+      font-size: 28px;
 
       &:hover,
       &:active {
