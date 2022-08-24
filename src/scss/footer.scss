@@ -494,6 +494,11 @@ $colors: (
     flex-direction: column;
     justify-content: center;
 
+    @include media-max-width(545px) {
+      display: flex;
+      text-align: center;
+    }
+
     .main-footer__links-bloc {
       display: flex;
       align-items: flex-start;
@@ -512,9 +517,9 @@ $colors: (
       }
       @include media-max-width(545px) {
         display: flex;
-        width: 100%;
+        width: 85%;
         margin: 0 auto;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
       }
     }
@@ -526,8 +531,10 @@ $colors: (
 
       @include media-max-width(545px) {
         display: flex;
+        width: 45%;
         flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
+        align-items: flex-start;
       }
     }
 
