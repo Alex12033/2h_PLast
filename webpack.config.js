@@ -106,6 +106,7 @@ module.exports = {
         "drainageSystems",
         "industrialWater",
         "waterPurification",
+        "contactsPage"
       ],
 
       chunks: ["main"],
