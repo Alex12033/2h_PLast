@@ -506,14 +506,12 @@ $colors: (
 
       @include media-max-width(1000px) {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
       }
       @include media-max-width(690px) {
         display: flex;
         align-items: flex-start;
-        flex-wrap: wrap;
       }
       @include media-max-width(545px) {
         display: flex;

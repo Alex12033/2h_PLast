@@ -5,6 +5,7 @@ mixin header(mainTitle, title)
       meta(charset="UTF-8")
       meta(http-equiv="X-UA-Compatible", content="IE=edge")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      link(rel='shortcut icon' href='/src/assets/log.png')
       title= mainTitle
     body 
       .mobile-nav__backdrop
@@ -37,7 +38,7 @@ mixin header(mainTitle, title)
         a(href='./index.html')
           img.logo(src='../src/assets/logo.png' alt='logo')
         .info
-          .mail
+          a.mail
             img.mail-logo(src='../src/assets/mail-header.png' alt='logo')
             div
               .mail-title Емаїл
