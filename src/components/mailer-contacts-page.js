@@ -16,6 +16,8 @@ const loader = document.querySelector(".loader");
 
 const fields = document.querySelectorAll("input");
 
+let marksClient = document.querySelector(".what-want-client");
+
 function mailerContactsPage() {
   function displayMsg(msg) {
     let msgForUser = document.querySelector(".msg-for-user");
@@ -62,6 +64,8 @@ function mailerContactsPage() {
       valuesInput[name] = value; //if input empty we save false in object else we save value of input
     });
 
+    
+
     if (
       valuesInput.name === "" ||
       valuesInput.email === "" ||
@@ -80,7 +84,9 @@ function mailerContactsPage() {
           To: "aleksandrignashov42@gmail.com",
           From: "aleksandrignashov42@gmail.com",
           Subject: "Інформація про кліента",
-          Body: `Інформація від кліента: ім'я ${valuesInput["name"]}, пошта: ${valuesInput["email"]}, телефон: ${valuesInput["phone"]}`,
+          Body: `Інформація від кліента: ім'я ${valuesInput["name"]}, пошта: ${valuesInput["email"]}, телефон: ${valuesInput["phone"]}, примітки від кліента: ${
+          marksClient.value === "" ? "немає" : marksClient.value
+        }`,
         }).then((message) => {
           if (message === "OK") {
             loader.style.display = "none";
