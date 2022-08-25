@@ -1,3 +1,9 @@
+@mixin media-max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
 .promotion__timer {
   display: flex;
   flex-direction: column;
@@ -11,6 +17,10 @@
     font-weight: bold;
     color: white;
     text-align: center;
+
+    @include media-max-width(500px) {
+      font-size: 20px;
+  }
   }
   .timer {
     margin-top: 15px;
@@ -23,8 +33,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: #fff;
     color: #1C2752;
     border-radius: 4px;
@@ -36,7 +46,7 @@
   }
 
   .timer__block span {
-    color: #FFB342;
+    color: #00a0e3;
     font-size: 30px;
     font-weight: 700;
   }
