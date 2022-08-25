@@ -216,6 +216,14 @@
           font-weight: 400;
           font-size: 30px;
           color: #ffffff;
+
+          @include media-max-width(550px) {
+            font-size: 20px;
+          }
+
+          @include media-max-width(450px) {
+            font-size: 15px;
+          } 
         }
 
         @keyframes animate-call {

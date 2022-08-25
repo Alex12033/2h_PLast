@@ -71,7 +71,8 @@
     margin-top: 50px;
 
     @include media-max-width(1200px) {
-      justify-content: space-between;
+      justify-content: space-around;
+      align-items: center;
     }
 
     .card {

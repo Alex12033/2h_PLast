@@ -3,8 +3,6 @@ require("../scss/auto-scroll.scss");
 function autoScroll() {
   let scrollBtn = document.querySelector(".scroll-to-top");
 
-  let aboutUsLink = document.querySelector("#about-us");
-
   let contacts = document.querySelector(".contact-form");
 
   let seeServicesBtn = document.querySelector(".services-btn");
@@ -27,11 +25,6 @@ function autoScroll() {
   scrollBtn.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({ top: 1, behavior: "smooth" });
-  });
-
-  aboutUsLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    contacts.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 
   seeServicesBtn.addEventListener("click", (e) => {
