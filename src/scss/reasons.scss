@@ -45,7 +45,7 @@
       padding: 5px 5px;
       color: white;
       align-items: center;
-      background: rgba(#000000, 0.8);
+      background: rgba(#000000, 0.3);
     }
 
     .why-us {
@@ -68,28 +68,12 @@
 
     .title-service {
       margin-top: 23px;
+      margin-bottom: 23px;
       font-family: "Mulish";
       font-style: normal;
       font-weight: 400;
       font-size: 45px;
       color: #1c2752;
-
-      @include media-max-width(1300px) {
-        color: white;
-      }
-
-      @include media-max-width(600px) {
-        text-align: center;
-      }
-    }
-
-    .reason-text {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 17px;
-      margin: 40px 11px;
-      color: #7e7e7e;
 
       @include media-max-width(1300px) {
         color: white;
