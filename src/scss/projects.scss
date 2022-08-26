@@ -87,6 +87,11 @@
       text-align: center;
       background: #ffffff;
       padding: 21px 21px 0px 21px;
+      height: 420px;
+
+      img {
+        height: 230px;
+      }
 
       animation: gallery-animation 1.5s backwards ease-in-out;
 
@@ -103,7 +108,6 @@
         img {
           width: 100%;
         }
-
         width: 30%;
         padding: 10px 10px 0px 10px;
       }
@@ -127,16 +131,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
-        margin-top: 27px;
-      }
-
-      .card-subtitle {
-        margin: 27px 0px;
-        color: #7e7e7e;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 17px;
+        margin-top: 47px;
       }
     }
   }
