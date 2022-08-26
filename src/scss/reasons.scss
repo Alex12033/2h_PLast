@@ -54,7 +54,7 @@
       justify-content: space-between;
       margin-top: 0px;
       background: #dfdedc;
-      padding: 0 20px;
+      padding: 5px 20px;
 
       img {
         margin-right: 10px;
@@ -62,7 +62,7 @@
 
       @include media-max-width(1300px) {
         background: rgb(33, 31, 31);
-        padding: 10px 20px;
+        padding: 5px 20px;
       }
     }
 
