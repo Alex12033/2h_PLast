@@ -7,6 +7,7 @@ let autoScroll = require('./components/auto-scroll');
 let mailer = require('./components/mailer-forms');
 let modalMailer = require('./components/modal-window/modal-mailer');
 let sliderGalery = require('./components/slider-galery');
+let scrollMagic = require('./components/scroll-magic');
 
 modalMailer();
 mailer();
@@ -17,3 +18,4 @@ timer();
 modal();
 slider();
 sliderGalery();
+scrollMagic();
