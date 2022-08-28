@@ -8,7 +8,7 @@ let mailer = require('./components/mailer-forms');
 let modalMailer = require('./components/modal-window/modal-mailer');
 let sliderGalery = require('./components/slider-galery');
 let headerSlider = require('./components/header-slider');
-
+let scrollMagic = require('./components/scroll-magic');
 
 modalMailer();
 mailer();
@@ -20,3 +20,4 @@ modal();
 slider();
 sliderGalery();
 headerSlider();
+scrollMagic();
