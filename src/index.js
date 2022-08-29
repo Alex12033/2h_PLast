@@ -10,14 +10,14 @@ let sliderGalery = require('./components/slider-galery');
 let headerSlider = require('./components/header-slider');
 let scrollMagic = require('./components/scroll-magic');
 
+scrollMagic();
+timer();
+modal();
 modalMailer();
 mailer();
 autoScroll();
 component();
 burgerMenu();
-timer();
-modal();
 slider();
 sliderGalery();
 headerSlider();
-scrollMagic();

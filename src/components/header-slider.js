@@ -3,7 +3,6 @@ var images = [];
 var slideTime = 3000; // 3 seconds
 
 let headerImageBlock = document.querySelector(".header-body");
-console.log(headerImageBlock);
 
 images[0] = '../../src/assets/header-slide/1.jpg';
 images[1] = '../../src/assets/header-slide/2.jpg';

@@ -3,7 +3,7 @@ require("../scss/scroll-magic.scss");
 function scrollMagic() {
   AOS.init({
     // Global settings:
-    disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+     // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
     initClassName: "aos-init", // class applied after initialization
     animatedClassName: "aos-animate", // class applied on animation
@@ -13,7 +13,7 @@ function scrollMagic() {
     throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
   
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 70, // offset (in px) from the original trigger point
+    offset: 50, // offset (in px) from the original trigger point
     delay: 1.5, // values from 0 to 3000, with step 50ms
     duration: 800, // values from 0 to 3000, with step 50ms
     easing: "ease-in-out", // default easing for AOS animations
