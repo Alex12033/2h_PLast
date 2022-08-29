@@ -3,7 +3,7 @@ require("../scss/scroll-magic.scss");
 function scrollMagic() {
   AOS.init({
     // Global settings:
-     // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
     initClassName: "aos-init", // class applied after initialization
     animatedClassName: "aos-animate", // class applied on animation
@@ -17,7 +17,7 @@ function scrollMagic() {
     delay: 1.5, // values from 0 to 3000, with step 50ms
     duration: 800, // values from 0 to 3000, with step 50ms
     easing: "ease-in-out", // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
+    once: true, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
   });
