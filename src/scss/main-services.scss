@@ -16,7 +16,7 @@
 
     .tagline-offer {
       margin-top: 140px;
-      padding: 0 10px;
+      padding: 5px 10px;
       background: rgba(#ffffff, 0.9);
       display: flex;
       align-items: center;
@@ -165,13 +165,9 @@
     justify-content: space-between;
     flex-direction: row;
 
-    @include media-max-width(1300px) {
-      background: url("../assets/tab-image-1.jpg");
-      background-position: center center;
-      background-size: cover;
-      img {
-        display: none;
-      }
+    .tab-image {
+      width: 45%;
+      height: 350px;
     }
 
     @include media-max-width(900px) {
@@ -181,14 +177,19 @@
     }
 
     @include media-max-width(700px) {
-      top: 340px;
+      top: 350px;
       padding: 10px 30px;
       text-align: center;
     }
 
     @include media-max-width(500px) {
-      top: 390px;
+      top: 400px;
       padding: 10px 30px;
+    }
+
+    @include media-max-width(400px) {
+      top: 430px;
+      padding: 10px 20px;
     }
 
     img {
@@ -290,11 +291,29 @@
   #industrial {
     display: flex;
     animation: tabs-animation 1s backwards ease-in-out;
+
+    @include media-max-width(1300px) {
+      background: url("../assets/industrial.jpg");
+      background-position: center center;
+      background-size: cover;
+      img {
+        display: none;
+      }
+    }
   }
 
   #residential {
     display: none;
     animation: tabs-animation 1s backwards ease-in-out;
+
+    @include media-max-width(1300px) {
+      background: url("../assets/private.jpg");
+      background-position: center center;
+      background-size: cover;
+      img {
+        display: none;
+      }
+    }
   }
 
   @keyframes tabs-animation {
