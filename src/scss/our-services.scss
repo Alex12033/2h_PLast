@@ -9,11 +9,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 120px 0px 0px 0px;
   background: rgb(230, 230, 230);
   padding-bottom: 140px;
 
   .title__section {
-    margin-top: 200px;
+    margin-top: 100px;
 
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      padding: 0px 20px;
+      padding: 5px 20px;
       width: 300px;
       background: #ffff;
 
@@ -85,7 +86,7 @@
       margin-bottom: 20px;
       width: 30%;
       transition: 0.5s ease-out;
-      height: 400px;
+      height: 430px;
 
       &:hover {
         transform: translateY(-15px);
@@ -95,6 +96,18 @@
       @include media-max-width(1200px) {
         width: 90%;
         align-items: center;
+        text-align: center;
+        height: 330px;
+      }
+
+      @include media-max-width(650px) {
+        height: 400px;
+      }
+
+      @include media-max-width(400px) {
+        padding: 25px 30px;
+        width: 95%;
+        height: 450px;
       }
 
       img {
@@ -102,14 +115,17 @@
       }
 
       .card-title {
+        display: flex;
         color: #ffb342;
         font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
         margin-bottom: 25px;
+        flex: 1;
 
         @include media-max-width(500px) {
+          align-items: center;
           text-align: center;
         }
       }
@@ -121,9 +137,14 @@
         font-size: 18px;
         color: #d2d2d2;
         margin-bottom: 20px;
+        flex: 4;
 
         @include media-max-width(800px) {
           text-align: center;
+        }
+
+        @include media-max-width(400px) {
+          flex: 2;
         }
       }
 

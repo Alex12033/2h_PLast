@@ -25,29 +25,29 @@
         display: none;
         justify-content: center;
         align-items: center;
-    
+
         text-align: center;
-        
-        background:rgb(28, 6, 118);
+
+        background: rgb(28, 6, 118);
         width: 70%;
         height: 200px;
         color: white;
         font-size: 20px;
-        
+
         position: fixed;
         left: 50%;
         top: 20%;
         opacity: 1;
         transform: translate(-50%, 50%);
       }
-    
+
       .loader {
         display: none;
         position: fixed;
         width: 250px;
         left: 50%;
         top: 20%;
-       
+
         border-radius: 90%;
         transform: translate(-50%, 50%);
         background: rgba(14, 13, 13, 0.5);
@@ -84,7 +84,7 @@
       .project-title__left {
         display: flex;
         align-items: center;
-        padding: 0px 10px;
+        padding: 5px 10px;
         background: rgba(255, 255, 255, 0.8);
 
         img {
@@ -320,7 +320,7 @@
       .project-title {
         display: flex;
         align-items: center;
-        padding: 0px 10px;
+        padding: 5px 10px;
         background: rgba(255, 255, 255, 0.8);
 
         img {
@@ -380,7 +380,7 @@
 
         button {
           width: 100%;
-          background: #ffb342;
+          background: #00a0e3;
           margin-top: 30px;
           cursor: pointer;
           border: none;

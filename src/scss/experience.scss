@@ -115,8 +115,7 @@
     width: 100%;
     margin-top: 10px;
 
-    @include media-max-width(600px) {
-      width: 100%;
+    @include media-max-width(700px) {
       flex-direction: column;
     }
 
@@ -161,6 +160,10 @@
         font-weight: 400;
         font-size: 17px;
         margin-top: 10px;
+
+        @include media-max-width(1400px) {
+          margin-left: 30px;
+        }
 
         @include media-max-width(1000px) {
           color: white;
