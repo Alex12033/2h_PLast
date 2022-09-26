@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../src/assets/log.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="../src/scss/header-slider.scss"> -->
+    <!-- <script defer src="../src/components/header-slider.js"></script> -->
+
     <title>2H_Plast</title>
 </head>
 
@@ -14,7 +18,7 @@
     <div class="scroll-to-top">
         <!-- <img src="../src/assets/arrow_up.svg" alt="arrow-up"> -->
     </div>
-    <header  data-aos="fade-up">
+    <header data-aos="fade-up">
         <div class="mobile-nav__backdrop">
             <nav class="mobile-nav">
                 <div class="mobile-nav__wrapper">
@@ -94,26 +98,54 @@
             <button class="question-btn">Виникли запитання ?</button>
         </div>
         <div class="header-body">
-            <!-- BURGER-MENU-BTN -->
+            <div class="itcss">
+                <div class="itcss__wrapper">
+                    <div class="itcss__items">
+                        <div class="itcss__item">
+                            <div class="testSlide1">
+                                <div class="tagline">
+                                    <img src="../src/assets/gear.svg" alt="gear">
+                                    <span>Покращуемо життя наших клієнтів, приймаючи ефективні рішення</span>
+                                </div>
+                                <h2 class="title-header">
+                                    Визнаний лідер у сферах <br> охолодження та очищення води
+                                </h2>
+                                
+                            </div>
+                            <!-- <img src="../src/assets/header-slide/1.jpg" alt="slide image"> -->
+                        </div>
+                        <div class="itcss__item">
+                            <div class="testSlide2">
+                                <div class="tagline">
+                                    <img src="../src/assets/gear.svg" alt="gear">
+                                    <span>Покращуемо життя наших клієнтів, приймаючи ефективні рішення</span>
+                                </div>
+                                <h2 class="title-header">
+                                    Визнаний лідер у сферах <br> охолодження та очищення води
+                                </h2>
+                               
+                            </div>
+                            <!-- <img src="../src/assets/header-slide/2.jpg" alt="slide image"> -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+                <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+                <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+            </div>
+            
+            <button class="services-btn">Дивитися Послуги</button>
+
             <button class="toggle-button">
                 <span class="toggle-button__bar"></span>
                 <span class="toggle-button__bar"></span>
                 <span class="toggle-button__bar"></span>
             </button>
-            <div class="container">
-                <div class="tagline">
-                    <img src="../src/assets/gear.svg" alt="gear">
-                    <span>Покращуемо життя наших клієнтів, приймаючи ефективні рішення</span>
-                </div>
-                <h2 class="title-header">
-                    Визнаний лідер у сферах <br> охолодження та очищення води
-                </h2>
-                <button class="services-btn">Дивитися Послуги</button>
-            </div>
         </div>
     </header>
 
-    <section class="experience" data-aos="fade-left">
+    <section class="experience" data-aos="fade-up">
         <div class="left-side-experience" data-aos="zoom-in">
 
             <!-- <img class="greetings-image" src="../src/assets/reason-image.svg" alt="reason-image"> -->
@@ -166,11 +198,11 @@
             </h3>
 
             <div class="tabs-variants" data-aos="zoom-in">
-                <div id="residential__tab-identify" class="residential" >
+                <div id="residential__tab-identify" class="residential">
                     <img class="residential-image-btn" src="../src/assets/residential.png" alt="residential image">
                     <span class="residential-image-btn">Приватні</span>
                 </div>
-                
+
                 <div id="industrial__tab-identify" class="industrial extractor-tabs">
                     <img class="industrial-image-btn" src="../src/assets/tab-industrial.png" alt="industrial image">
                     <span class="industrial-image-btn">Промислові</span>
@@ -302,29 +334,30 @@
                 надаючи креативні та економічно ефективні рішення для їхніх потреб
             </div>
             <div class="reason" data-aos="zoom-in-down" data-aos-delay="400">
-            <div class="reason">
-                <div class="title-reason">
-                    <img src="../src/assets/check-img.png" alt="checker-img1">
-                    <div class="title">15 років досвіду</div>
+                <div class="reason">
+                    <div class="title-reason">
+                        <img src="../src/assets/check-img.png" alt="checker-img1">
+                        <div class="title">15 років досвіду</div>
+                    </div>
+                    <span>Ми пропонуємо широкий ассортимент завантажень для градирень та очистних споруд.
+                    </span>
                 </div>
-                <span>Ми пропонуємо широкий ассортимент завантажень для градирень та очистних споруд.
-                </span>
-            </div>
-            <div class="reason" data-aos="zoom-in-down" data-aos-delay="500">
-                <div class="title-reason">
-                    <img src="../src/assets/check-img.png" alt="checker-img2">
-                    <div class="title">Цінуємо ваш час</div>
+                <div class="reason" data-aos="zoom-in-down" data-aos-delay="500">
+                    <div class="title-reason">
+                        <img src="../src/assets/check-img.png" alt="checker-img2">
+                        <div class="title">Цінуємо ваш час</div>
+                    </div>
+                    <span>Ми повністю розуміємо, що ваш час надзвичайно цінний. Ми прагнемо дотримуватись
+                        термінів.</span>
                 </div>
-                <span>Ми повністю розуміємо, що ваш час надзвичайно цінний. Ми прагнемо дотримуватись термінів.</span>
-            </div>
-            <div class="reason" data-aos="zoom-in-down" data-aos-delay="600">
-                <div class="title-reason">
-                    <img src="../src/assets/check-img.png" alt="checker-img3">
-                    <div class="title">Доступна ціна</div>
+                <div class="reason" data-aos="zoom-in-down" data-aos-delay="600">
+                    <div class="title-reason">
+                        <img src="../src/assets/check-img.png" alt="checker-img3">
+                        <div class="title">Доступна ціна</div>
+                    </div>
+                    <span>Завдяки нашим партнерам та великим закупівлям маємо конкурентні ціни</span>
                 </div>
-                <span>Завдяки нашим партнерам та великим закупівлям маємо конкурентні ціни</span>
             </div>
-        </div>
     </section>
     <section class="projects" data-aos="fade-up">
         <div class="project-title">
@@ -332,50 +365,50 @@
             <span>Галерея</span>
         </div>
         <h1 class="project-subtitle">Наші останні клієнти</h1>
-            <div class="project-gallery">
-                <div class="project-gallery-card">
-                    <img src="../src/assets/gallery/dmz.jpg" alt="gallery-img">
-                    <div class="card-title">
-                        «Євраз Дніпровський Металургійний Завод» 
-                    </div>
-
+        <div class="project-gallery">
+            <div class="project-gallery-card">
+                <img src="../src/assets/gallery/dmz.jpg" alt="gallery-img">
+                <div class="card-title">
+                    «Євраз Дніпровський Металургійний Завод»
                 </div>
-                <div class="project-gallery-card">
-                    <img src="../src/assets/gallery/oleina.jpg" alt="gallery-img">
-                    <div class="card-title">
-                        «Дніпропетровський олейноекстракційний завод» 
-                    </div>
 
-                </div>
-                <div class="project-gallery-card">
-                    <img src="../src/assets/gallery/maso.jpg" alt="gallery-img">
-                    <div class="card-title">
-                        «Бердянські ковбаси»
-                    </div>
-
-                </div>
-                <div class="project-gallery-card">
-                    <img src="../src/assets/gallery/mironovska.jpg" alt="gallery-img">
-                    <div class="card-title">
-                        «Миронівська птахофабрика» 
-                    </div>
-
-                </div>
-                <div class="project-gallery-card">
-                    <img src="../src/assets/gallery/biogazenergo.jpg" alt="gallery-img">
-                    <div class="card-title">
-                        ТОВ «Біогазенерго»
-                    </div>
-
-                </div>
-                <div class="project-gallery-card">
-                    <img src="../src/assets/gallery/galicina.jpg" alt="gallery-img">
-                    <div class="card-title">
-                        ТМ Галичина 
-                    </div>
-
-                </div>
             </div>
+            <div class="project-gallery-card">
+                <img src="../src/assets/gallery/oleina.jpg" alt="gallery-img">
+                <div class="card-title">
+                    «Дніпропетровський олейноекстракційний завод»
+                </div>
+
+            </div>
+            <div class="project-gallery-card">
+                <img src="../src/assets/gallery/maso.jpg" alt="gallery-img">
+                <div class="card-title">
+                    «Бердянські ковбаси»
+                </div>
+
+            </div>
+            <div class="project-gallery-card">
+                <img src="../src/assets/gallery/mironovska.jpg" alt="gallery-img">
+                <div class="card-title">
+                    «Миронівська птахофабрика»
+                </div>
+
+            </div>
+            <div class="project-gallery-card">
+                <img src="../src/assets/gallery/biogazenergo.jpg" alt="gallery-img">
+                <div class="card-title">
+                    ТОВ «Біогазенерго»
+                </div>
+
+            </div>
+            <div class="project-gallery-card">
+                <img src="../src/assets/gallery/galicina.jpg" alt="gallery-img">
+                <div class="card-title">
+                    ТМ Галичина
+                </div>
+
+            </div>
+        </div>
         <!-- GALLERY SLIDER -->
         <div class="gallery__slider-wrapper">
             <div class="prev-gallery">
@@ -652,8 +685,7 @@
                     <div class="modal__title">МИ З ВАМИ ЗВ'ЯЖЕМОСЬ ЯКНАЙШВИДШЕ!</div>
                     <input required placeholder="Ваше ім'я" name="name-modal" type="text"
                         class="modal__input--contacts">
-                    <input required placeholder="e-mail" name="email-modal" type="text"
-                        class="modal__input--contacts">
+                    <input required placeholder="e-mail" name="email-modal" type="text" class="modal__input--contacts">
                     <input type="phone" required placeholder="+38 (063) 111 22 33" name="phone-modal"
                         class="modal__input--phones">
 
