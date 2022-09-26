@@ -1,20 +1,43 @@
 require("../../scss/modal/timer.scss");
 
-let date = new Date("Sep 10 2022 00:00:00");
+let date = new Date("Sep 26 2022 20:08:00");
 
 function timer() {
   let now = new Date();
-  gap = date - now;
+
+  let gap = date - now;
+  console.log("gap", gap);
 
   let days = Math.floor(gap / 1000 / 60 / 60 / 24);
+
   let hours = Math.floor(gap / 1000 / 60 / 60) % 24;
   let minutes = Math.floor(gap / 1000 / 60) % 60;
   let seconds = Math.floor(gap / 1000) % 60;
 
+  //this need for correct start timer when we set date in date variable 
   if (gap < 0) {
-    days = days + 14;
+    days = days + 7;
+
     hours = hours + 24;
+
     minutes = minutes + 60;
+
+    seconds = seconds + 60;
+  }
+
+  /* 
+  this is necessary so that the 
+  timer does not go negative and when 
+  this value is reached, the required 
+  number of days is added
+ */
+  if (gap < -1664744400) {
+    days = days + 7;
+
+    hours = hours + 24;
+
+    minutes = minutes + 60;
+
     seconds = seconds + 60;
   }
 
