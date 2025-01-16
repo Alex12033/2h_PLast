@@ -1,27 +1,48 @@
 require("../../scss/modal/timer.scss");
 
-let date = new Date("Sep 28 2022 15:09:00");
+const intervalDays = 5; // Период сброса в днях
+const intervalMilliseconds = intervalDays * 24 * 60 * 60 * 1000;
+
+// Функция для получения или установки конечной даты
+function getOrSetEndDate() {
+  const savedEndDate = localStorage.getItem("endDate"); // Получаем дату из localStorage
+  if (savedEndDate) {
+    return new Date(savedEndDate); // Если дата есть, возвращаем её
+  } else {
+    const newEndDate = new Date(Date.now() + intervalMilliseconds); // Устанавливаем новую дату
+    localStorage.setItem("endDate", newEndDate); // Сохраняем её в localStorage
+    return newEndDate;
+  }
+}
+
+let endDate = getOrSetEndDate(); // Получаем конечную дату
 
 function timer() {
-  let now = new Date();
+  const now = new Date();
+  let gap = endDate - now;
 
-  let gap = date - now;
-
-  let days = Math.floor(gap / 1000 / 60 / 60 / 24);
-  let hours = Math.floor(gap / 1000 / 60 / 60) % 24;
-  let minutes = Math.floor(gap / 1000 / 60) % 60;
-  let seconds = Math.floor(gap / 1000) % 60;
-
-  if (gap === 0 || gap < 300) {
-    date.setDate(date.getDate() + 6);
+  // Если таймер истек, обновляем конечную дату
+  if (gap <= 0) {
+    endDate = new Date(Date.now() + intervalMilliseconds); // Устанавливаем новую дату
+    localStorage.setItem("endDate", endDate); // Сохраняем её в localStorage
+    gap = endDate - now; // Пересчитываем оставшееся время
   }
 
+  const days = Math.floor(gap / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((gap / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((gap / (1000 * 60)) % 60);
+  const seconds = Math.floor((gap / 1000) % 60);
+
+  // Обновляем элементы на странице
   document.getElementById("d").innerText = days;
   document.getElementById("h").innerText = hours;
   document.getElementById("m").innerText = minutes;
   document.getElementById("s").innerText = seconds;
 }
+
+// Запускаем таймер
 timer();
 setInterval(timer, 1000);
+
 
 module.exports = timer;
