@@ -67,8 +67,8 @@
 
       ul {
         margin: 20px auto;
-        width: 50%;
-        text-align: center;
+        width: 100%;
+        text-align: left;
 
         @include media-max-width(450px) {
           width: 90%;
@@ -82,6 +82,7 @@
 
         li {
           text-align: start;
+          line-height: 16px;
           margin: 5px 0;
         }
       }

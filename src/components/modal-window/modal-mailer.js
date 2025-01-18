@@ -21,7 +21,6 @@ function mailerForm() {
   }
 
   function validatePhone(phone) {
-    console.log(phone);
     let pattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
     if (phone !== false && pattern.test(phone)) {
@@ -33,7 +32,6 @@ function mailerForm() {
   }
 
   function validateEmail(email) {
-    console.log(email);
     let pattern =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (pattern.test(email)) {
@@ -55,7 +53,6 @@ function mailerForm() {
       const { name, value } = field;
       valuesInput[name] = value; //if input empty we save false in object else we save value of input
     });
-    console.log(valuesInput["email-modal"], valuesInput["phone-modal"]);
 
     if (
       valuesInput["name-modal"] === "" ||
