@@ -2,9 +2,9 @@ let component = require('./components/tabs');
 
 let burgerMenu = require('./components/burger_menu');
 
-// let timer = require('./components/modal-window/timer');
+let timer = require('./components/modal-window/timer');
 
-// let modal = require('./components/modal-window/modal');
+let modal = require('./components/modal-window/modal');
 
 let reviewSlider = require('./components/reviewSlider');
 
@@ -21,8 +21,8 @@ let headerSlider = require('./components/header-slider');
 let scrollMagic = require('./components/scroll-magic');
 
 scrollMagic();
-// timer();
-// modal();
+timer();
+modal();
 modalMailer();
 mailer();
 autoScroll();
